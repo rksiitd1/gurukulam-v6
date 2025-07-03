@@ -111,10 +111,10 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
                 <a
-                  href="mailto:vidyalayabhagalpur@gmail.com"
+                  href="mailto:divyabiharmission@gmail.com"
                   className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation"
                 >
-                  vidyalayabhagalpur@gmail.com
+                  divyabiharmission@gmail.com
                 </a>
               </div>
             </div>

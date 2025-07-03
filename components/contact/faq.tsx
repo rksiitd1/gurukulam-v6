@@ -184,7 +184,7 @@ export function FAQ() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
               <a
-                href="mailto:vidyalayabhagalpur@gmail.com"
+                href="mailto:divyabiharmission@gmail.com"
                 className="bg-white text-slate-800 hover:bg-gray-100 px-8 py-4 font-bold font-mono tracking-wide transition-all duration-300 hover:scale-105 inline-flex items-center justify-center border-2 border-transparent hover:border-blue-300"
               >
                 <HelpCircle className="w-5 h-5 mr-3" />
@@ -201,7 +201,7 @@ export function FAQ() {
             <div className="bg-slate-700/50 p-6 border-l-2 border-blue-400">
               <div className="font-mono text-sm text-gray-300 space-y-2">
                 <p className="font-semibold">
-                  Email: <span className="text-blue-300">vidyalayabhagalpur@gmail.com</span>
+                  Email: <span className="text-blue-300">divyabiharmission@gmail.com</span>
                 </p>
                 <p className="font-semibold">
                   Phone: <span className="text-blue-300">+91 92625 36295</span>

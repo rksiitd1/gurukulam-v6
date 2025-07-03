@@ -61,7 +61,7 @@ export function ContactForm() {
         // Create email link
         const subject = encodeURIComponent(formData.subject)
         const body = encodeURIComponent(`Dear Team,\n\n${formData.message}\n\nBest regards,\n${formData.name}`)
-        const emailLink = `mailto:vidyalayabhagalpur@gmail.com?subject=${subject}&body=${body}`
+        const emailLink = `mailto:divyabiharmission@gmail.com?subject=${subject}&body=${body}`
         window.open(emailLink, "_blank")
       } else {
         // Create WhatsApp link
@@ -314,7 +314,7 @@ export function ContactForm() {
                   <div className="bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-200 rounded-xl p-4">
                     <p className="text-red-800 font-semibold text-center">
                       ❌ Sorry, there was an error. Please try contacting us directly at{" "}
-                      {formData.preferredContact === "email" ? "vidyalayabhagalpur@gmail.com" : "+91 92625 36295"}
+                      {formData.preferredContact === "email" ? "divyabiharmission@gmail.com" : "+91 92625 36295"}
                     </p>
                   </div>
                 )}
@@ -366,7 +366,7 @@ export function ContactForm() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Email Support</h4>
-                      <p className="text-purple-600 font-medium">vidyalayabhagalpur@gmail.com</p>
+                      <p className="text-purple-600 font-medium">divyabiharmission@gmail.com</p>
                       <p className="text-sm text-gray-600">24-hour response</p>
                     </div>
                   </div>

@@ -131,7 +131,7 @@ export function CallToAction() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm">vidyalayabhagalpur@gmail.com</span>
+                  <span className="text-sm">divyabiharmission@gmail.com</span>
                 </div>
               </div>
             </div>
