@@ -96,7 +96,7 @@ export function ContactHero() {
 
               <p className="text-xl text-gray-600 leading-relaxed">
                 We're here to answer your questions, provide information about our programs, and help you become part of
-                our mission to transform rural education in Bihar. Reach out to us anytime!
+                our mission to transform Bihar from the ground up. Reach out to us anytime!
               </p>
 
               <div className="bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-green-500 p-6 rounded-r-lg shadow-lg hover:shadow-xl transition-all duration-300">
