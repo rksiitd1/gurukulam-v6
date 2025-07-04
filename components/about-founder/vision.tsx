@@ -168,9 +168,9 @@ export function Vision() {
             <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               Support Our Vision
             </button>
-            <button className="border border-green-600 text-green-700 hover:bg-green-50 px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="/volunteer" className="border border-green-600 text-green-700 hover:bg-green-50 px-6 py-3 rounded-lg font-semibold transition-colors">
               Volunteer With Us
-            </button>
+            </a>
           </div>
         </div>
       </div>

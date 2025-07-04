@@ -157,13 +157,15 @@ export function Programs() {
                 Donate Now
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white hover:bg-white/10 w-full sm:w-auto touch-manipulation text-slate-500"
-            >
-              Volunteer With Us
-            </Button>
+            <Link href="/volunteer" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white hover:bg-white/10 w-full sm:w-auto touch-manipulation text-slate-500"
+              >
+                Volunteer With Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
