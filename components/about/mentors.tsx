@@ -194,42 +194,6 @@ export function Mentors() {
           ))}
         </div>
 
-
-        {/* Mentors' Expertise Showcase */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Guiding Our Mission</h3>
-            <p className="text-lg text-gray-600 font-devanagari mb-2">हमारे मिशन का मार्गदर्शन</p>
-            <p className="text-sm text-gray-500 max-w-2xl mx-auto">Our distinguished mentors embody the principles that drive our transformation, combining academic excellence with dharmic wisdom</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <GraduationCap className="w-8 h-8 text-slate-600" />
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">Education with Yogic Values</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">Integrating traditional wisdom with modern learning for holistic development</p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Award className="w-8 h-8 text-blue-600" />
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">Rural Empowerment</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">Transforming rural communities through inclusive, sustainable development</p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Building className="w-8 h-8 text-indigo-600" />
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">Service & Compassion</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">Fostering values of seva, empathy, and community service in education</p>
-            </div>
-          </div>
-        </div>
-
         {/* Values Reflection */}
         <div className="mt-16">
           <div className="text-center mb-12">
