@@ -116,46 +116,6 @@ export function Vision() {
           </div>
         </div>
 
-        {/* Future Goals */}
-        <div>
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">2030 Vision Goals</h3>
-            <p className="text-lg text-gray-600 font-devanagari">२०३० तक के लक्ष्य</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {goals.map((goal, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 space-y-4">
-                  <h4 className="text-lg font-semibold text-gray-900">{goal.title}</h4>
-                  <p className="text-sm text-gray-600">{goal.description}</p>
-
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-600">Target:</span>
-                      <span className="font-medium text-green-600">{goal.target}</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-600">Current:</span>
-                      <span className="font-medium text-blue-600">{goal.progress}</span>
-                    </div>
-                  </div>
-
-                  {/* Progress Bar */}
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div
-                      className="bg-gradient-to-r from-green-500 to-blue-500 h-2 rounded-full"
-                      style={{
-                        width: `${Math.min((Number.parseInt(goal.progress) / Number.parseInt(goal.target)) * 100, 100)}%`,
-                      }}
-                    ></div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
         {/* Call to Action */}
         <div className="mt-16 bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Be Part of This Vision</h3>
