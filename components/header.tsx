@@ -56,8 +56,10 @@ export function Header() {
                 <span className="sm:hidden">दान</span>
               </Link>
             </Button>
+          </div>
 
-            {/* Mobile menu button - larger touch target */}
+          {/* Mobile menu button - always visible on mobile */}
+          <div className="flex sm:hidden items-center">
             <button
               className="lg:hidden p-3 -mr-3 touch-manipulation"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
