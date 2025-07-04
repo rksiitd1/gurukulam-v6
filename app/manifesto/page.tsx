@@ -14,7 +14,7 @@ export default function ManifestoPage() {
           <a
             href="/Gram Vikas Manifesto.pdf"
             download
-            className="group flex-1 flex items-center justify-center gap-2 min-w-[150px] max-w-xs text-center bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-orange-300"
+            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-orange-300"
           >
             <Download className="w-5 h-5" />
             PDF
@@ -24,7 +24,7 @@ export default function ManifestoPage() {
           <a
             href="/gram_vikas_manifesto.md"
             download
-            className="group flex-1 flex items-center justify-center gap-2 min-w-[150px] max-w-xs text-center bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-green-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-green-300"
+            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-green-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-green-300"
           >
             <Download className="w-5 h-5" />
             .md
@@ -138,7 +138,7 @@ export default function ManifestoPage() {
           <a
             href="/Gram Vikas Manifesto.pdf"
             download
-            className="group flex-1 flex items-center justify-center gap-2 min-w-[150px] max-w-xs text-center bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-orange-300"
+            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-orange-300"
           >
             <Download className="w-5 h-5" />
             PDF
@@ -148,7 +148,7 @@ export default function ManifestoPage() {
           <a
             href="/gram_vikas_manifesto.md"
             download
-            className="group flex-1 flex items-center justify-center gap-2 min-w-[150px] max-w-xs text-center bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-green-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-green-300"
+            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-green-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-green-300"
           >
             <Download className="w-5 h-5" />
             .md

@@ -79,7 +79,13 @@ export function About() {
                 height={400}
                 className="rounded-2xl shadow-lg w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 border">
+              <div className="hidden sm:block absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 border">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-orange-600">2018</div>
+                  <div className="text-sm text-gray-600">Mission Started</div>
+                </div>
+              </div>
+              <div className="block sm:hidden mt-4 bg-white rounded-lg shadow-lg p-4 border w-full max-w-xs mx-auto">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-orange-600">2018</div>
                   <div className="text-sm text-gray-600">Mission Started</div>
