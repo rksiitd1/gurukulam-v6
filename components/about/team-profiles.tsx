@@ -88,48 +88,6 @@ export function TeamProfiles() {
         "Expert in indigenous seed preservation",
       ],
     },
-    {
-      name: "Shri Amit Singh",
-      title: "Youth Coordinator",
-      titleHindi: "युवा समन्वयक",
-      education: "M.A. Social Work, Jamia Millia",
-      experience: "5+ years in youth development",
-      specialization: "Skill Development, Entrepreneurship",
-      description:
-        "Manages Udyamita program and youth skill development initiatives. Works closely with young people to create employment opportunities in villages.",
-      image: "/placeholder.svg?height=300&width=300",
-      contact: {
-        email: "amit@divyabiharmission.in",
-        phone: "+91 98765 43214",
-      },
-      achievements: [
-        "Trained 100+ youth in various skills",
-        "Established 25 micro-enterprises",
-        "Created 150+ local employment opportunities",
-        "Expert in rural entrepreneurship",
-      ],
-    },
-    {
-      name: "Smt. Meera Gupta",
-      title: "Women Empowerment Lead",
-      titleHindi: "महिला सशक्तिकरण प्रमुख",
-      education: "M.S.W, Tata Institute of Social Sciences",
-      experience: "10+ years in women's development",
-      specialization: "Women's Rights, Skill Training",
-      description:
-        "Leads women empowerment initiatives, self-help group formation, and skill development programs. Focuses on creating economic independence for rural women.",
-      image: "/placeholder.svg?height=300&width=300",
-      contact: {
-        email: "meera@divyabiharmission.in",
-        phone: "+91 98765 43215",
-      },
-      achievements: [
-        "Formed 20+ women's self-help groups",
-        "Trained 150+ women in income generation",
-        "Achieved 80% women's participation",
-        "Expert in gender-sensitive programming",
-      ],
-    },
   ]
 
   return (
