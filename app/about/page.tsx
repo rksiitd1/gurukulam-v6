@@ -5,6 +5,7 @@ import { TeamProfiles } from "@/components/about/team-profiles"
 import { Vision } from "@/components/about/vision"
 import { Mentors } from "@/components/about/mentors"
 import { CallToAction } from "@/components/call-to-action"
+import BhagavadGitaVerse from "@/components/about/BhagavadGitaVerse"
 
 
 export default function AboutPage() {
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <Vision />
       <TeamProfiles />
       <Mentors />
+      <BhagavadGitaVerse />
       <CallToAction />
     </main>
   )
