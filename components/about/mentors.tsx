@@ -194,30 +194,6 @@ export function Mentors() {
           ))}
         </div>
 
-        {/* Advisory Board & Partners */}
-        <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Advisory Board & Partners</h3>
-            <p className="text-gray-600 font-devanagari">सलाहकार मंडल और भागीदार</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {advisoryBoard.map((partner, index) => (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-slate-100 to-blue-100 rounded-full flex items-center justify-center">
-                    <Building className="w-6 h-6 text-slate-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-gray-900">{partner.name}</h4>
-                    <p className="text-sm text-slate-600 mb-1">{partner.type}</p>
-                    <p className="text-xs text-gray-600">{partner.contribution}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
 
         {/* Mentors' Expertise Showcase */}
         <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
