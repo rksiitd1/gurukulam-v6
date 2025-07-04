@@ -1,0 +1,40 @@
+import React from 'react';
+
+const BhagavadGitaVerse = () => {
+  return (
+    <section className="bg-gradient-to-b from-orange-50 to-white py-16 px-4">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Decorative SVG Motif */}
+        <div className="flex justify-center mb-6">
+          <svg width="64" height="32" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="16" rx="30" ry="10" fill="#fde68a" fillOpacity="0.4" />
+            <ellipse cx="32" cy="16" rx="20" ry="6" fill="#f59e42" fillOpacity="0.15" />
+            <ellipse cx="32" cy="16" rx="10" ry="3" fill="#22c55e" fillOpacity="0.12" />
+          </svg>
+        </div>
+        {/* Sanskrit Quote */}
+        <div className="mb-8">
+          <div className="text-3xl md:text-4xl font-[\'Noto Serif Devanagari\',serif] text-gray-800 leading-relaxed mb-4 drop-shadow-md">
+            कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br/>
+            मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥
+          </div>
+        </div>
+        {/* Decorative Line */}
+        <div className="w-16 h-0.5 bg-gradient-to-r from-orange-400 to-yellow-500 mx-auto mb-6 rounded-full"></div>
+        {/* English Translation */}
+        <div className="mb-8">
+          <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed italic">
+            "You have the right to perform your prescribed duties, but not to the fruits of your actions.<br/>
+            Never be the cause of the results of your action, nor become attached to inaction."
+          </p>
+        </div>
+        {/* Attribution */}
+        <div className="inline-block px-4 py-1 bg-orange-100 text-orange-700 text-sm font-semibold rounded-full shadow-sm border border-orange-200">
+          Bhagavad Gītā, Chapter 2, Verse 47
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BhagavadGitaVerse;
