@@ -140,32 +140,32 @@ export function Programs() {
         </div>
 
         {/* Call to Action - responsive */}
-        <div className="mt-12 lg:mt-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-6 sm:p-8 text-center text-white">
-          <h3 className="text-xl sm:text-2xl font-bold mb-4">Ready to Make a Difference?</h3>
-          <p className="text-base sm:text-lg mb-4 sm:mb-6 opacity-90">
-            Join our mission to transform rural education and empower communities across Bihar.
+        <div className="mt-12 lg:mt-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 sm:p-8 text-center">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Curious to Make a Difference?</h3>
+          <p className="text-base sm:text-lg mb-4 sm:mb-6 text-gray-700 opacity-90">
+            Discover how our programs are building a brighter future for rural Bihar. Find your way to contribute!
           </p>
-          <p className="font-devanagari text-base sm:text-lg mb-4 sm:mb-6 opacity-90">
-            आइए, मिलकर बिहार के गांवों को शिक्षित और सशक्त बनाएं
+          <p className="font-devanagari text-base sm:text-lg mb-4 sm:mb-6 text-green-700 opacity-90">
+            बदलाव की शुरुआत यहीं से होती है
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Link href="/donate" className="w-full sm:w-auto">
+            <Link href="/programs" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="bg-white text-orange-600 hover:bg-gray-100 w-full sm:w-auto touch-manipulation"
+                className="bg-green-600 hover:bg-green-700 text-white w-full sm:w-auto touch-manipulation"
               >
-                Donate Now
+                Explore All Programs
               </Button>
             </Link>
-            <Link href="/volunteer" className="w-full sm:w-auto">
+            <a href="#get-involved" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white hover:bg-white/10 w-full sm:w-auto touch-manipulation text-slate-500"
+                className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto touch-manipulation"
               >
-                Volunteer With Us
+                How You Can Help
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
