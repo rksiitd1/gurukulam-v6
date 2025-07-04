@@ -125,9 +125,9 @@ export function Vision() {
           </p>
           <p className="font-devanagari text-lg text-green-700 mb-6">इस दृष्टि का हिस्सा बनें</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="/donate" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               Support Our Vision
-            </button>
+            </a>
             <button className="border border-green-600 text-green-700 hover:bg-green-50 px-6 py-3 rounded-lg font-semibold transition-colors">
               Volunteer With Us
             </button>
