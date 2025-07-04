@@ -5,7 +5,7 @@ import Image from "next/image"
 export function TeamProfiles() {
   const coreTeam = [
     {
-      name: "Shri Mukund Agarwal",
+      name: "Shri Mukund Agrawal",
       title: "Founder & Director",
       titleHindi: "संस्थापक एवं निदेशक",
       education: "B.Tech Mechanical Engineering, IIT Delhi",
@@ -26,11 +26,11 @@ export function TeamProfiles() {
       ],
     },
     {
-      name: "Raju Sir",
+      name: "Raju Kumar Jha",
       title: "Academic Director",
       titleHindi: "शैक्षणिक निदेशक",
-      education: "M.Ed, Delhi University",
-      experience: "12+ years in education",
+      education: "M.Sc., Patna University",
+      experience: "6+ years in education",
       specialization: "Curriculum Development, Teacher Training",
       description:
         "Experienced educator who designs our holistic curriculum blending NCERT standards with cultural education. Leads teacher training and academic quality assurance.",
@@ -47,14 +47,14 @@ export function TeamProfiles() {
       ],
     },
     {
-      name: "Sanjay Suman",
+      name: "Sanjay Kumar",
       title: "Operations Manager",
       titleHindi: "संचालन प्रबंधक",
-      education: "MBA, Patna University",
-      experience: "8+ years in NGO management",
-      specialization: "Operations, Finance, Community Relations",
+      education: "B.A., Madhepura University",
+      experience: "3+ years in Education",
+      specialization: "Education, Community Relations",
       description:
-        "Manages day-to-day operations, financial planning, and community outreach. Ensures smooth functioning of all programs and maintains transparency in operations.",
+        "Manages day-to-day operations, financial planning, and community outreach. Ensures smooth functioning of all programs.",
       image: "/placeholder.svg?height=300&width=300",
       contact: {
         email: "rajesh@divyabiharmission.in",
