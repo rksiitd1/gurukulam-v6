@@ -68,12 +68,6 @@ export function CommunityEngagementSection() {
               </Button>
             </a>
           </div>
-          <div className="mt-10 max-w-2xl mx-auto bg-white/80 rounded-xl p-6 shadow">
-            <blockquote className="text-lg italic text-gray-800 mb-2">
-              "Education is the power that can transform society."
-            </blockquote>
-            <cite className="text-orange-700 font-semibold">- Mukund Agarwal, Founder</cite>
-          </div>
         </div>
       </div>
     </section>
