@@ -13,34 +13,40 @@ export function WhyWeExistSection() {
         <p className="text-base sm:text-lg text-gray-600 mb-8">
           We believe true progress begins in the villages. Our mission is to empower rural Bihar through education, sustainable agriculture, entrepreneurship, and cultural pride.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-8">
-          <div className="flex flex-col items-center">
-            <GraduationCap className="w-8 h-8 text-blue-600 mb-2" />
-            <span className="font-medium text-sm font-devanagari">शिक्षा</span>
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-5 gap-4 mb-8 max-w-xs sm:max-w-none mx-auto">
+          <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
+            <GraduationCap className="w-9 h-9 text-blue-600 mb-2" />
+            <span className="font-medium text-base font-devanagari">शिक्षा</span>
             <span className="text-xs text-gray-500">Education</span>
           </div>
-          <div className="flex flex-col items-center">
-            <Sprout className="w-8 h-8 text-green-600 mb-2" />
-            <span className="font-medium text-sm font-devanagari">कृषि</span>
+          <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
+            <Sprout className="w-9 h-9 text-green-600 mb-2" />
+            <span className="font-medium text-base font-devanagari">कृषि</span>
             <span className="text-xs text-gray-500">Agriculture</span>
           </div>
-          <div className="flex flex-col items-center">
-            <Users className="w-8 h-8 text-orange-600 mb-2" />
-            <span className="font-medium text-sm font-devanagari">उद्यमिता</span>
+          <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
+            <Users className="w-9 h-9 text-orange-600 mb-2" />
+            <span className="font-medium text-base font-devanagari">उद्यमिता</span>
             <span className="text-xs text-gray-500">Entrepreneurship</span>
           </div>
-          <div className="flex flex-col items-center">
-            <Heart className="w-8 h-8 text-pink-600 mb-2" />
-            <span className="font-medium text-sm font-devanagari">गौशाला</span>
+          <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
+            <Heart className="w-9 h-9 text-pink-600 mb-2" />
+            <span className="font-medium text-base font-devanagari">गौशाला</span>
             <span className="text-xs text-gray-500">Gaushala</span>
           </div>
-          <div className="flex flex-col items-center">
-            <BookOpen className="w-8 h-8 text-yellow-600 mb-2" />
-            <span className="font-medium text-sm font-devanagari">संस्कृति</span>
+          <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
+            <BookOpen className="w-9 h-9 text-yellow-600 mb-2" />
+            <span className="font-medium text-base font-devanagari">संस्कृति</span>
             <span className="text-xs text-gray-500">Culture</span>
           </div>
         </div>
-        <Link href="/manifesto" target="_blank" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors">Read Our Manifesto</Link>
+        <Link 
+          href="/manifesto" 
+          target="_blank" 
+          className="block w-full sm:w-auto bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold px-6 py-4 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 focus:outline-none focus:ring-4 focus:ring-orange-300 mx-auto"
+        >
+          Read Our Manifesto
+        </Link>
       </div>
     </section>
   )
