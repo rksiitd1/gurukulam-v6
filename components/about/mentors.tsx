@@ -245,21 +245,6 @@ export function Mentors() {
           </div>
         </div>
 
-        {/* Testimonial from Mentor */}
-        <div className="mt-16 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8 border border-slate-200">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-to-br from-slate-200 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Award className="w-8 h-8 text-slate-600" />
-            </div>
-            <blockquote className="text-lg italic text-gray-700 mb-6 leading-relaxed">
-              "The transformation happening in rural Bihar through education is truly inspiring. Every child deserves
-              quality education, and Divya Bihar Global Gurukulam is making this vision a reality."
-            </blockquote>
-            <div className="text-sm text-gray-600">
-              <strong>Our Distinguished Mentors</strong> • Guiding Rural Transformation
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
