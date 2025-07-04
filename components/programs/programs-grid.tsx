@@ -259,13 +259,46 @@ export function ProgramsGrid() {
         </div>
 
         {/* Program Comparison */}
-        <div className="mt-20 bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8">
+        <div className="mt-20 bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-4 sm:p-8">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Program Comparison</h3>
             <p className="text-gray-600 font-devanagari">कार्यक्रम तुलना</p>
           </div>
 
-          <div className="overflow-x-auto">
+          {/* Mobile Card View */}
+          <div className="block sm:hidden space-y-4">
+            {/* Gurukulam */}
+            <div className="bg-white rounded-xl shadow p-4 flex flex-col">
+              <span className="font-bold text-blue-600 mb-1">Divya Bihar Gurukulam</span>
+              <span className="text-xs text-gray-500 mb-1">Age Group: <span className="font-medium text-gray-900">5-18 years</span></span>
+              <span className="text-xs text-gray-500 mb-1">Duration: <span className="font-medium text-gray-900">K-12 (13 years)</span></span>
+              <span className="text-xs text-gray-500">Type: <span className="font-medium text-gray-900">Residential</span></span>
+            </div>
+            {/* Shri Classes */}
+            <div className="bg-white rounded-xl shadow p-4 flex flex-col">
+              <span className="font-bold text-green-600 mb-1">Shri Classes</span>
+              <span className="text-xs text-gray-500 mb-1">Age Group: <span className="font-medium text-gray-900">14-18 years</span></span>
+              <span className="text-xs text-gray-500 mb-1">Duration: <span className="font-medium text-gray-900">4 years</span></span>
+              <span className="text-xs text-gray-500">Type: <span className="font-medium text-gray-900">Day Classes</span></span>
+            </div>
+            {/* Agriculture Program */}
+            <div className="bg-white rounded-xl shadow p-4 flex flex-col">
+              <span className="font-bold text-emerald-600 mb-1">Agriculture Program</span>
+              <span className="text-xs text-gray-500 mb-1">Age Group: <span className="font-medium text-gray-900">18+ years</span></span>
+              <span className="text-xs text-gray-500 mb-1">Duration: <span className="font-medium text-gray-900">3-6 months</span></span>
+              <span className="text-xs text-gray-500">Type: <span className="font-medium text-gray-900">Training</span></span>
+            </div>
+            {/* Udyamita Program */}
+            <div className="bg-white rounded-xl shadow p-4 flex flex-col">
+              <span className="font-bold text-orange-600 mb-1">Udyamita Program</span>
+              <span className="text-xs text-gray-500 mb-1">Age Group: <span className="font-medium text-gray-900">18+ years</span></span>
+              <span className="text-xs text-gray-500 mb-1">Duration: <span className="font-medium text-gray-900">6-12 months</span></span>
+              <span className="text-xs text-gray-500">Type: <span className="font-medium text-gray-900">Skill Development</span></span>
+            </div>
+          </div>
+
+          {/* Desktop Table View */}
+          <div className="overflow-x-auto hidden sm:block">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-gray-200">
