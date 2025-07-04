@@ -131,7 +131,7 @@ export function ContactHero() {
                   <h3 className="text-3xl font-bold text-slate-800 mb-3 tracking-tight">Visit Our Campus</h3>
                   <div className="flex items-center space-x-2 text-sm text-slate-600 font-medium bg-slate-100 px-4 py-2 rounded-md inline-block border border-slate-200">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span>Always Open • No Appointment Required</span>
+                    <span>Always Open</span>
                   </div>
                 </div>
               </div>
