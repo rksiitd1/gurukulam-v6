@@ -156,37 +156,6 @@ export function TeamProfiles() {
                     </div>
 
                     <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
-
-                    {/* Achievements */}
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Key Achievements:</h4>
-                      <div className="grid grid-cols-1 gap-1">
-                        {member.achievements.map((achievement, achievementIndex) => (
-                          <div key={achievementIndex} className="flex items-center space-x-2">
-                            <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                            <span className="text-xs text-gray-700">{achievement}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Contact Info */}
-                    <div className="flex flex-wrap gap-3 pt-2 border-t border-gray-100">
-                      <a
-                        href={`mailto:${member.contact.email}`}
-                        className="flex items-center space-x-2 text-xs text-blue-600 hover:text-blue-800 transition-colors"
-                      >
-                        <Mail className="w-3 h-3" />
-                        <span>Email</span>
-                      </a>
-                      <a
-                        href={`tel:${member.contact.phone}`}
-                        className="flex items-center space-x-2 text-xs text-green-600 hover:text-green-800 transition-colors"
-                      >
-                        <Phone className="w-3 h-3" />
-                        <span>Call</span>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </CardContent>
