@@ -3,32 +3,7 @@ import { GraduationCap, BookOpen, Sprout, Users } from "lucide-react"
 import Image from "next/image"
 
 export function ProgramsOverview() {
-  const programs = [
-    {
-      icon: <GraduationCap className="w-8 h-8 text-blue-500" />,
-      name: "Divya Bihar Global Gurukulam",
-      students: "200+",
-      description: "K-12 residential education",
-    },
-    {
-      icon: <BookOpen className="w-8 h-8 text-green-500" />,
-      name: "Shri Classes",
-      students: "150+",
-      description: "Competitive exam coaching",
-    },
-    {
-      icon: <Sprout className="w-8 h-8 text-emerald-500" />,
-      name: "Agriculture Program",
-      students: "300+",
-      description: "Sustainable farming training",
-    },
-    {
-      icon: <Users className="w-8 h-8 text-orange-500" />,
-      name: "Udyamita Program",
-      students: "100+",
-      description: "Entrepreneurship development",
-    },
-  ]
+  const programs: any[] = []
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-blue-50 via-green-50 to-orange-50 overflow-hidden">
