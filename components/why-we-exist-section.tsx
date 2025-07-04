@@ -40,7 +40,7 @@ export function WhyWeExistSection() {
             <span className="text-xs text-gray-500">Culture</span>
           </div>
         </div>
-        <Link href="/gram_vikas_manifesto.md" target="_blank" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors">Read Our Manifesto</Link>
+        <Link href="/manifesto" target="_blank" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors">Read Our Manifesto</Link>
       </div>
     </section>
   )
