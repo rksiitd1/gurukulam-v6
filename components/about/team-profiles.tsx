@@ -206,9 +206,9 @@ export function TeamProfiles() {
             <button className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors">
               Career Opportunities
             </button>
-            <button className="border border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="/volunteer" className="border border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-colors">
               Volunteer With Us
-            </button>
+            </a>
           </div>
         </div>
       </div>
