@@ -34,7 +34,7 @@ const AboutMissionHero = () => (
             Village Upliftment,
             <span className="text-orange-600 block">Nation Building</span>
             <span className="text-green-700 block font-devanagari text-2xl sm:text-3xl lg:text-4xl mt-2">
-              बिहार की आत्मा गाँवों में बसती है
+              देश की आत्मा गाँवों में बसती है
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -44,7 +44,7 @@ const AboutMissionHero = () => (
             <p className="text-orange-800 font-devanagari text-base sm:text-lg">
               "गांव उठेंगे, तभी देश प्रगति करेगा।"
             </p>
-            <p className="text-orange-700 text-xs sm:text-sm mt-1">- Manifesto</p>
+            <p className="text-orange-700 text-xs sm:text-sm mt-1">"When villages rise, only then will the nation progress."</p>
           </div>
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 border-t border-gray-200">
