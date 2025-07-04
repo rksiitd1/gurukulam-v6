@@ -2,7 +2,7 @@ import { Heart, Users, Leaf } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
-  { value: "500+", label: "Villages Impacted", color: "text-green-600" },
+  { value: "25+", label: "Villages Impacted", color: "text-green-600" },
   { value: "2000+", label: "Students Benefited", color: "text-orange-600" },
   { value: "100+", label: "Volunteers", color: "text-blue-600" },
 ];
@@ -73,7 +73,6 @@ const AboutMissionHero = () => (
                 <p className="text-xs sm:text-sm font-medium text-gray-900">
                   "Empowering villages, transforming lives."
                 </p>
-                <p className="text-xs text-gray-600 mt-1">- Divya Bihar Mission</p>
               </div>
             </div>
           </div>
