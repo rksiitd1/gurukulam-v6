@@ -26,7 +26,7 @@ export function TeamProfiles() {
       ],
     },
     {
-      name: "Smt. Priya Sharma",
+      name: "Raju Sir",
       title: "Academic Director",
       titleHindi: "शैक्षणिक निदेशक",
       education: "M.Ed, Delhi University",
@@ -47,7 +47,7 @@ export function TeamProfiles() {
       ],
     },
     {
-      name: "Shri Rajesh Kumar",
+      name: "Sanjay Suman",
       title: "Operations Manager",
       titleHindi: "संचालन प्रबंधक",
       education: "MBA, Patna University",
@@ -68,7 +68,7 @@ export function TeamProfiles() {
       ],
     },
     {
-      name: "Dr. Sunita Devi",
+      name: "Vivek Kumar",
       title: "Agriculture Coordinator",
       titleHindi: "कृषि समन्वयक",
       education: "Ph.D. Agriculture, BAU Sabour",
