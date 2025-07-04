@@ -64,7 +64,7 @@ export function CommunityEngagementSection() {
             </Button>
             <a href="/about#mentors" className="w-full sm:w-auto">
               <Button size="lg" variant="outline" className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
-                Volunteer With Us
+              Meet Our Mentors
               </Button>
             </a>
           </div>
