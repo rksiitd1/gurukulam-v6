@@ -10,6 +10,7 @@ export function Footer() {
     { name: "Stories", href: "/blog" },
     { name: "Contact", href: "/contact" },
     { name: "About Founder", href: "/about-founder" },
+    { name: "Volunteer", href: "/volunteer" },
   ]
 
   const programs = [
@@ -17,6 +18,8 @@ export function Footer() {
     { name: "Shri Classes", href: "/programs/shri-classes" },
     { name: "Agro Projects", href: "/programs/agriculture" },
     { name: "Udyamita Program", href: "/programs/udyamita" },
+    { name: "Internship", href: "/internship" },
+    { name: "Divya Bihar Fellowship", href: "/fellowship" },
   ]
 
   return (
