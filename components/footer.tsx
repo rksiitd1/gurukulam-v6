@@ -9,6 +9,7 @@ export function Footer() {
     { name: "Gallery", href: "/gallery" },
     { name: "Stories", href: "/blog" },
     { name: "Contact", href: "/contact" },
+    { name: "About Founder", href: "/about-founder" },
   ]
 
   const programs = [
