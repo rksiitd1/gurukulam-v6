@@ -9,6 +9,7 @@ import Image from "next/image"
 export function PhotoGallery() {
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [visibleCount, setVisibleCount] = useState(12)
 
   const categories = [
     { id: "all", name: "All Photos", count: 120 },
@@ -116,10 +117,49 @@ export function PhotoGallery() {
       category: "cultural",
       date: "October 2023",
     },
+    {
+      id: 13,
+      src: "/images/gallery/agriculture/13.jpg?height=400&width=600",
+      title: "Diwali Celebration",
+      description: "Traditional Diwali celebration with diyas, rangoli, and cultural performances",
+      category: "cultural",
+      date: "October 2023",
+    },
+    {
+      id: 14,
+      src: "/images/gallery/agriculture/14.jpg?height=400&width=600",
+      title: "Diwali Celebration",
+      description: "Traditional Diwali celebration with diyas, rangoli, and cultural performances",
+      category: "cultural",
+      date: "October 2023",
+    },
+    {
+      id: 15,
+      src: "/images/gallery/agriculture/15.jpg?height=400&width=600",
+      title: "Diwali Celebration",
+      description: "Traditional Diwali celebration with diyas, rangoli, and cultural performances",
+      category: "cultural",
+      date: "October 2023",
+    },
+    {
+      id: 16,
+      src: "/images/gallery/agriculture/16.jpg?height=400&width=600",
+      title: "Diwali Celebration",
+      description: "Traditional Diwali celebration with diyas, rangoli, and cultural performances",
+      category: "cultural",
+      date: "October 2023",
+    },
+    
   ]
 
+  const sortedPhotos = [...photos].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
   const filteredPhotos =
-    selectedCategory === "all" ? photos : photos.filter((photo) => photo.category === selectedCategory)
+    selectedCategory === "all"
+      ? sortedPhotos
+      : sortedPhotos.filter((photo) => photo.category === selectedCategory)
+
+  const visiblePhotos = filteredPhotos.slice(0, visibleCount)
 
   const openLightbox = (index: number) => {
     setSelectedImage(index)
@@ -167,7 +207,10 @@ export function PhotoGallery() {
             <Button
               key={category.id}
               variant={selectedCategory === category.id ? "default" : "outline"}
-              onClick={() => setSelectedCategory(category.id)}
+              onClick={() => {
+                setSelectedCategory(category.id)
+                setVisibleCount(12)
+              }}
               className={`${
                 selectedCategory === category.id
                   ? "bg-blue-600 hover:bg-blue-700 text-white"
@@ -182,7 +225,7 @@ export function PhotoGallery() {
 
         {/* Photo Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredPhotos.map((photo, index) => (
+          {visiblePhotos.map((photo, index) => (
             <Card
               key={photo.id}
               className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
@@ -210,6 +253,20 @@ export function PhotoGallery() {
             </Card>
           ))}
         </div>
+
+        {/* Load More Button */}
+        {visibleCount < filteredPhotos.length && (
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-blue-600 text-blue-700 hover:bg-blue-50"
+              onClick={() => setVisibleCount(visibleCount + 12)}
+            >
+              Load More Photos
+            </Button>
+          </div>
+        )}
 
         {/* Lightbox */}
         {selectedImage !== null && (
@@ -253,13 +310,6 @@ export function PhotoGallery() {
             </div>
           </div>
         )}
-
-        {/* Load More Button */}
-        <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-blue-600 text-blue-700 hover:bg-blue-50">
-            Load More Photos
-          </Button>
-        </div>
       </div>
     </section>
   )
