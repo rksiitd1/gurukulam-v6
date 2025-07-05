@@ -22,7 +22,7 @@ export function PhotoGallery() {
   const photos = [
     {
       id: 1,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/1.jpg?height=400&width=600",
       title: "Mathematics Class in Progress",
       description: "Golu Sir teaching advanced mathematics to Class 12 students",
       category: "classroom",
@@ -30,7 +30,7 @@ export function PhotoGallery() {
     },
     {
       id: 2,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/2.jpg?height=400&width=600",
       title: "Saraswati Puja Celebration",
       description: "Annual Saraswati Puja celebration with traditional rituals and cultural programs",
       category: "cultural",
@@ -38,7 +38,7 @@ export function PhotoGallery() {
     },
     {
       id: 3,
-      src: "/images/gallery/agriculture/organic-farming1.jpg?height=400&width=600",
+      src: "/images/gallery/agriculture/3.jpg?height=400&width=600",
       title: "Organic Farming Training",
       description: "Farmers learning sustainable agriculture techniques at our demonstration farm",
       category: "agriculture",
@@ -46,7 +46,7 @@ export function PhotoGallery() {
     },
     {
       id: 4,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/4.jpg?height=400&width=600",
       title: "Annual Sports Day",
       description: "Students participating in various sports activities and competitions",
       category: "sports",
@@ -54,7 +54,7 @@ export function PhotoGallery() {
     },
     {
       id: 5,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/5.jpg?height=400&width=600",
       title: "Village Community Meeting",
       description: "Monthly community meeting discussing education and development initiatives",
       category: "community",
@@ -62,7 +62,7 @@ export function PhotoGallery() {
     },
     {
       id: 6,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/6.jpg?height=400&width=600",
       title: "Science Laboratory Session",
       description: "Students conducting physics experiments in our well-equipped laboratory",
       category: "classroom",
@@ -70,7 +70,7 @@ export function PhotoGallery() {
     },
     {
       id: 7,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/7.jpg?height=400&width=600",
       title: "Holi Celebration",
       description: "Colorful Holi celebration bringing together students, teachers, and community",
       category: "cultural",
@@ -78,7 +78,7 @@ export function PhotoGallery() {
     },
     {
       id: 8,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/8.jpg?height=400&width=600",
       title: "Cow Care at Gaushala",
       description: "Students learning about cow care and organic farming at our Gaushala",
       category: "agriculture",
@@ -86,7 +86,7 @@ export function PhotoGallery() {
     },
     {
       id: 9,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/9.jpg?height=400&width=600",
       title: "Cricket Tournament",
       description: "Inter-village cricket tournament organized by our sports committee",
       category: "sports",
@@ -94,7 +94,7 @@ export function PhotoGallery() {
     },
     {
       id: 10,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/10.jpg?height=400&width=600",
       title: "Women's Self Help Group",
       description: "Women entrepreneurs showcasing their handicraft products",
       category: "community",
@@ -102,7 +102,7 @@ export function PhotoGallery() {
     },
     {
       id: 11,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/11.jpg?height=400&width=600",
       title: "Sanskrit Class",
       description: "Traditional Sanskrit education integrated with modern curriculum",
       category: "classroom",
@@ -110,7 +110,7 @@ export function PhotoGallery() {
     },
     {
       id: 12,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/12.jpg?height=400&width=600",
       title: "Diwali Celebration",
       description: "Traditional Diwali celebration with diyas, rangoli, and cultural performances",
       category: "cultural",
