@@ -85,7 +85,7 @@ export function Programs() {
               key={index}
               className={`overflow-hidden hover:shadow-xl transition-all duration-300 ${getColorClasses(program.color)}`}
             >
-              <div className="relative aspect-[3/2] w-full overflow-hidden bg-gray-100">
+              <div className="relative aspect-[4/3] sm:aspect-[3/2] w-full overflow-hidden bg-gray-100">
                 <Image
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}
