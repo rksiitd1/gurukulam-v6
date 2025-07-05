@@ -13,7 +13,7 @@ export function ProgramsGrid() {
       icon: <GraduationCap className="w-8 h-8 text-blue-500" />,
       description:
         "Residential K-12 school providing holistic education that combines NCERT curriculum with Sanskrit, Yoga, and traditional Indian values in a nurturing environment.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/gurukulam.jpg",
       features: [
         "NCERT Curriculum",
         "Residential Facilities",
@@ -44,7 +44,7 @@ export function ProgramsGrid() {
       icon: <BookOpen className="w-8 h-8 text-green-500" />,
       description:
         "Specialized coaching for grades 9-12 focusing on Science, Mathematics, and competitive exam preparation with expert faculty and personalized attention.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/shri-classes.jpg",
       features: [
         "Grades 9-12 Coaching",
         "JEE/NEET Preparation",
@@ -75,7 +75,7 @@ export function ProgramsGrid() {
       icon: <Sprout className="w-8 h-8 text-emerald-500" />,
       description:
         "Comprehensive agricultural training program promoting organic farming, agroforestry, and sustainable practices with hands-on experience at our demonstration farm.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/agro-gaushala.jpg",
       features: [
         "Organic Farming Training",
         "Agroforestry Models",
@@ -106,7 +106,7 @@ export function ProgramsGrid() {
       icon: <Users className="w-8 h-8 text-orange-500" />,
       description:
         "Entrepreneurship development program empowering women and youth with skills, training, and support to start their own businesses and become job creators.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/udyamita.jpg",
       features: [
         "Skill Development Training",
         "Business Plan Development",
@@ -165,13 +165,13 @@ export function ProgramsGrid() {
               key={program.id}
               className={`overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 ${getColorClasses(program.color)}`}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative aspect-[4/3] sm:aspect-[3/2] w-full overflow-hidden bg-gray-100">
                 <Image
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  width={1536}
+                  height={1024}
+                  className="w-full h-full object-contain transition-transform duration-300 hover:scale-105 bg-gray-100"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
                   {program.icon}
