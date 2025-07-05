@@ -85,13 +85,13 @@ export function Programs() {
               key={index}
               className={`overflow-hidden hover:shadow-xl transition-all duration-300 ${getColorClasses(program.color)}`}
             >
-              <div className="relative h-40 sm:h-48 overflow-hidden">
+              <div className="relative aspect-[3/2] w-full overflow-hidden bg-gray-100">
                 <Image
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  width={1536}
+                  height={1024}
+                  className="w-full h-full object-contain transition-transform duration-300 hover:scale-105 bg-gray-100"
                 />
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
                   {program.icon}
