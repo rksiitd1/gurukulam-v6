@@ -7,29 +7,25 @@ export default function ManifestoPage() {
       <header className="mb-10 text-center">
         <h1 className="text-5xl font-extrabold text-orange-700 font-devanagari mb-2 tracking-tight drop-shadow">ग्राम विकास संकल्प</h1>
         <h2 className="text-3xl font-bold text-gray-900 mb-4 tracking-tight">Gram Vikas Manifesto</h2>
-        <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
           Our vision and commitment for the holistic development of rural Bihar. This is our guiding document—read, share, or download to join the movement.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-2 w-full max-w-md mx-auto">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 w-full max-w-sm">
           <a
             href="/Gram Vikas Manifesto.pdf"
             download
-            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-orange-300"
+            className="group flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
           >
-            <Download className="w-5 h-5" />
-            PDF
-            <span className="ml-2 bg-white/20 px-2 py-0.5 rounded text-xs font-bold border border-white/40 group-hover:bg-white/30 transition">PDF</span>
-            <span className="absolute inset-0 rounded-full group-hover:ring-4 group-hover:ring-orange-300/40 transition"></span>
+            <Download className="w-4 h-4" />
+            Download PDF
           </a>
           <a
             href="/gram_vikas_manifesto.md"
             download
-            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-green-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-green-300"
+            className="group flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-offset-2"
           >
-            <Download className="w-5 h-5" />
-            .md
-            <span className="ml-2 bg-white/20 px-2 py-0.5 rounded text-xs font-bold border border-white/40 group-hover:bg-white/30 transition">MD</span>
-            <span className="absolute inset-0 rounded-full group-hover:ring-4 group-hover:ring-green-300/40 transition"></span>
+            <Download className="w-4 h-4" />
+            Download .md
           </a>
         </div>
       </header>
@@ -133,31 +129,27 @@ export default function ManifestoPage() {
           <p>हम यह मानते हैं कि वास्तविक परिवर्तन केवल योजनाओं से नहीं, बल्कि एकजुट और अटूट संकल्प तथा सतत प्रयासों से सम्भव होता है।</p>
         </div>
       </section>
-      <footer className="flex flex-col items-center gap-6 mt-12">
-        <div className="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md">
+      <footer className="flex flex-col items-center gap-4 mt-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 w-full max-w-sm">
           <a
             href="/Gram Vikas Manifesto.pdf"
             download
-            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-orange-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-orange-300"
+            className="group flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
           >
-            <Download className="w-5 h-5" />
-            PDF
-            <span className="ml-2 bg-white/20 px-2 py-0.5 rounded text-xs font-bold border border-white/40 group-hover:bg-white/30 transition">PDF</span>
-            <span className="absolute inset-0 rounded-full group-hover:ring-4 group-hover:ring-orange-300/40 transition"></span>
+            <Download className="w-4 h-4" />
+            Download PDF
           </a>
           <a
             href="/gram_vikas_manifesto.md"
             download
-            className="group flex-1 flex items-center justify-center gap-2 w-full sm:w-auto max-w-xs text-center bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-200 text-lg tracking-wide uppercase border-2 border-green-700 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-green-300"
+            className="group flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-offset-2"
           >
-            <Download className="w-5 h-5" />
-            .md
-            <span className="ml-2 bg-white/20 px-2 py-0.5 rounded text-xs font-bold border border-white/40 group-hover:bg-white/30 transition">MD</span>
-            <span className="absolute inset-0 rounded-full group-hover:ring-4 group-hover:ring-green-300/40 transition"></span>
+            <Download className="w-4 h-4" />
+            Download .md
           </a>
         </div>
-        <Link href="/" className="inline-flex items-center gap-2 bg-orange-100 hover:bg-orange-200 text-orange-700 font-bold py-2 px-6 rounded-full shadow transition-all duration-200 text-lg mt-2 border-2 border-orange-300 focus:outline-none focus:ring-4 focus:ring-orange-200">
-          <Home className="w-5 h-5" /> Back to Home
+        <Link href="/" className="inline-flex items-center gap-2 bg-orange-50 hover:bg-orange-100 text-orange-700 font-medium py-2 px-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 text-sm border border-orange-200 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2">
+          <Home className="w-4 h-4" /> Back to Home
         </Link>
       </footer>
     </main>
