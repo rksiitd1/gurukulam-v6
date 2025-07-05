@@ -267,13 +267,23 @@ export function VideoGallery() {
             </p>
             <p className="font-devanagari text-lg opacity-90 mb-6">हमारे यूट्यूब चैनल को सब्सक्राइब करें</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
+              <a
+                href="https://www.youtube.com/@shriclasses2?sub_confirmation=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-red-600 hover:bg-gray-100 rounded-lg font-medium transition-colors"
+              >
                 <Video className="w-5 h-5 mr-2" />
                 Subscribe Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-slate-500">
+              </a>
+              <a
+                href="https://www.youtube.com/@shriclasses2/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 border border-white hover:bg-white/10 text-white rounded-lg font-medium transition-colors"
+              >
                 Watch All Videos
-              </Button>
+              </a>
             </div>
           </div>
         </div>
