@@ -33,7 +33,7 @@ export function GalleryHero() {
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed">
-                Witness the journey of rural transformation through our comprehensive gallery. From classroom moments to
+                Witness the journey of transformation through our curated gallery. From classroom moments to
                 cultural celebrations, from agricultural innovations to student achievements - every image tells a story
                 of hope and progress.
               </p>
