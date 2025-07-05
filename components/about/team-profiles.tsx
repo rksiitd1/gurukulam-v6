@@ -55,7 +55,7 @@ export function TeamProfiles() {
       specialization: "Education, Community Relations",
       description:
         "Manages day-to-day operations, financial planning, and community outreach. Ensures smooth functioning of all programs.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/team/sanjay.jpg",
       contact: {
         email: "rajesh@divyabiharmission.in",
         phone: "+91 98765 43212",
@@ -76,7 +76,7 @@ export function TeamProfiles() {
       specialization: "Organic Farming, Agroforestry",
       description:
         "Leads our agricultural initiatives, training farmers in sustainable practices. Expert in organic farming and agroforestry models suitable for Bihar's climate.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/team/vivek.jpg",
       contact: {
         email: "sunita@divyabiharmission.in",
         phone: "+91 98765 43213",
