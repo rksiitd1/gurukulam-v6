@@ -210,7 +210,7 @@ export function PhotoGallery() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12">
           {categories.map((category) => (
             <Button
               key={category.id}
@@ -219,14 +219,17 @@ export function PhotoGallery() {
                 setSelectedCategory(category.id)
                 setVisibleCount(12)
               }}
+              size="sm"
               className={`${
                 selectedCategory === category.id
                   ? "bg-blue-600 hover:bg-blue-700 text-white"
                   : "border-blue-200 text-blue-700 hover:bg-blue-50"
-              }`}
+              } text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap`}
             >
-              <Filter className="w-4 h-4 mr-2" />
-              {category.name} ({getCategoryCount(category.id)})
+              <Filter className="w-3 h-3 sm:w-4 sm:h-4 mr-0.5 sm:mr-2" />
+              <span className="hidden sm:inline">{category.name}</span>
+              <span className="sm:hidden">{category.name.split(' ')[0]}</span>
+              <span className="hidden sm:inline"> ({getCategoryCount(category.id)})</span>
             </Button>
           ))}
         </div>
