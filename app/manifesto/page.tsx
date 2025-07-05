@@ -13,7 +13,8 @@ export default function ManifestoPage() {
         <div className="flex flex-col sm:flex-row justify-center gap-3 w-full max-w-sm">
           <a
             href="/Gram Vikas Manifesto.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
           >
             <Download className="w-4 h-4" />
@@ -133,7 +134,8 @@ export default function ManifestoPage() {
         <div className="flex flex-col sm:flex-row justify-center gap-3 w-full max-w-sm">
           <a
             href="/Gram Vikas Manifesto.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
           >
             <Download className="w-4 h-4" />
