@@ -38,7 +38,7 @@ export function PhotoGallery() {
     },
     {
       id: 3,
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/gallery/agriculture/organic-farming1.jpg?height=400&width=600",
       title: "Organic Farming Training",
       description: "Farmers learning sustainable agriculture techniques at our demonstration farm",
       category: "agriculture",

@@ -155,8 +155,8 @@ export function CallToAction() {
               </Button>
               <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-slate-500" asChild>
                 <Link href="/volunteer">
-                  <Users className="w-5 h-5 mr-2" />
-                  Join as Volunteer
+                <Users className="w-5 h-5 mr-2" />
+                Join as Volunteer
                 </Link>
               </Button>
             </div>

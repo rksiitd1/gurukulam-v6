@@ -161,10 +161,6 @@ export function VideoGallery() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4 text-sm text-gray-500">
                     <div className="flex items-center space-x-1">
-                      <Eye className="w-4 h-4" />
-                      <span>{videos[0].views} views</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
                       <Clock className="w-4 h-4" />
                       <span>{videos[0].date}</span>
                     </div>
@@ -211,10 +207,6 @@ export function VideoGallery() {
                   <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">{video.title}</h3>
                   <p className="text-sm text-gray-600 mb-3 line-clamp-2">{video.description}</p>
                   <div className="flex items-center justify-between text-xs text-gray-500">
-                    <div className="flex items-center space-x-1">
-                      <Eye className="w-3 h-3" />
-                      <span>{video.views}</span>
-                    </div>
                     <span>{video.date}</span>
                   </div>
                 </div>
@@ -249,10 +241,6 @@ export function VideoGallery() {
                   <p className="text-gray-600 mb-4">{videos[selectedVideo].description}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4 text-sm text-gray-500">
-                      <div className="flex items-center space-x-1">
-                        <Eye className="w-4 h-4" />
-                        <span>{videos[selectedVideo].views} views</span>
-                      </div>
                       <div className="flex items-center space-x-1">
                         <Clock className="w-4 h-4" />
                         <span>{videos[selectedVideo].date}</span>

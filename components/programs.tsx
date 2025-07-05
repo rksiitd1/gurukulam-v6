@@ -156,13 +156,13 @@ export function Programs() {
               </Button>
             </Link>
             <a href="#get-involved" className="w-full sm:w-auto">
-              <Button
-                size="lg"
-                variant="outline"
+            <Button
+              size="lg"
+              variant="outline"
                 className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto touch-manipulation"
-              >
+            >
                 How You Can Help
-              </Button>
+            </Button>
             </a>
           </div>
         </div>
