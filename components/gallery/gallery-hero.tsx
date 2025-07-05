@@ -3,12 +3,6 @@ import { Camera, Video, Calendar, Users } from "lucide-react"
 import Image from "next/image"
 
 export function GalleryHero() {
-  const stats = [
-    { icon: <Camera className="w-6 h-6" />, number: "1000+", label: "Photos" },
-    { icon: <Video className="w-6 h-6" />, number: "50+", label: "Videos" },
-    { icon: <Calendar className="w-6 h-6" />, number: "100+", label: "Events" },
-    { icon: <Users className="w-6 h-6" />, number: "500+", label: "Memories" },
-  ]
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-green-50 overflow-hidden">
@@ -52,28 +46,7 @@ export function GalleryHero() {
               </div>
             </div>
 
-            {/* Gallery Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {stats.map((stat, index) => (
-                <div key={index} className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 text-center">
-                  <div className="flex justify-center text-purple-500 mb-2">{stat.icon}</div>
-                  <div className="text-2xl font-bold text-gray-900">{stat.number}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
-                <Camera className="w-5 h-5 mr-2" />
-                Browse Photos
-              </Button>
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-700 hover:bg-blue-50">
-                <Video className="w-5 h-5 mr-2" />
-                Watch Videos
-              </Button>
-            </div>
           </div>
 
           {/* Featured Image Collage */}
