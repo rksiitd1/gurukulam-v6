@@ -13,7 +13,7 @@ export function Programs() {
       description:
         "K-12 residential school combining NCERT curriculum with Sanskrit, Yoga, and traditional values. Affordable education with hostel facilities for village children.",
       features: ["NCERT Curriculum", "Sanskrit & Yoga", "Residential Facilities", "Cultural Programs"],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/gurukulam.jpg",
       color: "blue",
     },
     {
@@ -23,7 +23,7 @@ export function Programs() {
       description:
         "Coaching classes for grades 9-12 focusing on Science, Mathematics, and competitive exam preparation with minimal fees for rural students.",
       features: ["Grades 9-12 Coaching", "Competitive Exams", "Minimal Fees", "Expert Faculty"],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/shri-classes.jpg",
       color: "green",
     },
     {
@@ -33,7 +33,7 @@ export function Programs() {
       description:
         "Demonstration farm promoting agroforestry, organic farming, and cow protection. Training farmers in sustainable agricultural practices.",
       features: ["Agroforestry Model", "Organic Farming", "Cow Protection", "Farmer Training"],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/agro-gaushala.jpg",
       color: "emerald",
     },
     {
@@ -43,7 +43,7 @@ export function Programs() {
       description:
         "Entrepreneurship training for women and youth, creating village-based job creators through skill development and micro-enterprises.",
       features: ["Women Empowerment", "Skill Development", "Micro-enterprises", "Self-reliance"],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/programs/udyamita.jpg",
       color: "orange",
     },
   ]
