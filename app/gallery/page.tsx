@@ -11,8 +11,6 @@ export default function GalleryPage() {
       <GalleryHero />
       <PhotoGallery />
       <VideoGallery />
-      <EventHighlights />
-      <StudentShowcase />
       <CallToAction />
     </main>
   )
