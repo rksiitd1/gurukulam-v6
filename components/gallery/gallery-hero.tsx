@@ -86,7 +86,7 @@ export function GalleryHero() {
                     className="w-full h-60 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 text-white text-sm font-medium">Farm Training</div>
+                  <div className="absolute bottom-3 left-3 text-white text-sm font-medium">Planting</div>
                 </div>
                 <div className="relative rounded-xl overflow-hidden shadow-lg">
                   <Image
