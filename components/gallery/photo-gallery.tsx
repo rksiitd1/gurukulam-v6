@@ -12,12 +12,12 @@ export function PhotoGallery() {
   const [visibleCount, setVisibleCount] = useState(12)
 
   const categories = [
-    { id: "all", name: "All Photos", count: 120 },
-    { id: "classroom", name: "Classroom", count: 35 },
-    { id: "cultural", name: "Cultural Events", count: 25 },
-    { id: "agriculture", name: "Agriculture", count: 20 },
-    { id: "sports", name: "Sports & Games", count: 15 },
-    { id: "community", name: "Community", count: 25 },
+    { id: "all", name: "All Photos" },
+    { id: "classroom", name: "Classroom" },
+    { id: "cultural", name: "Cultural Events" },
+    { id: "agriculture", name: "Agriculture" },
+    { id: "sports", name: "Sports & Games" },
+    { id: "community", name: "Community" },
   ]
 
   const photos = [
@@ -181,6 +181,14 @@ export function PhotoGallery() {
     }
   }
 
+  // Calculate counts dynamically
+  const getCategoryCount = (categoryId: string) => {
+    if (categoryId === "all") {
+      return photos.length
+    }
+    return photos.filter(photo => photo.category === categoryId).length
+  }
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -218,7 +226,7 @@ export function PhotoGallery() {
               }`}
             >
               <Filter className="w-4 h-4 mr-2" />
-              {category.name} ({category.count})
+              {category.name} ({getCategoryCount(category.id)})
             </Button>
           ))}
         </div>
