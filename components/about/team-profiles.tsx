@@ -13,7 +13,7 @@ export function TeamProfiles() {
       specialization: "Educational Leadership, Rural Development",
       description:
         "Visionary leader who left corporate opportunities to serve rural Bihar. Known as 'Golu Sir' by students, he combines modern educational methods with traditional Indian values.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/team/mukund.jpg",
       contact: {
         email: "mukund@divyabiharmission.in",
         phone: "+91 98765 43210",
@@ -34,7 +34,7 @@ export function TeamProfiles() {
       specialization: "Curriculum Development, Teacher Training",
       description:
         "Experienced educator who designs our holistic curriculum blending NCERT standards with cultural education. Leads teacher training and academic quality assurance.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/team/raju.jpg",
       contact: {
         email: "priya@divyabiharmission.in",
         phone: "+91 98765 43211",
