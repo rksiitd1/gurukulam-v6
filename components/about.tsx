@@ -121,23 +121,23 @@ export function About() {
         {/* Add spacing between Journey Milestones and Guiding Mantra */}
         <div className="mt-20"></div>
 
-        {/* Sanskrit Vision Quote */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8 lg:p-12 text-white text-center mb-20">
+        {/* Vivekananda Vision Quote */}
+        <div className="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl p-8 lg:p-12 text-white text-center mb-20">
           <div className="max-w-4xl mx-auto space-y-6">
-            <h3 className="text-2xl lg:text-3xl font-bold">Our Guiding Mantra</h3>
-            <blockquote className="text-2xl lg:text-4xl font-devanagari leading-relaxed">
-              "ग्रामे-ग्रामे सभाकार्या, ग्रामे-ग्रामे कथा शुभा"
+            <h3 className="text-2xl lg:text-3xl font-bold">Our Sacred Duty</h3>
+            <blockquote className="text-xl lg:text-3xl font-devanagari leading-relaxed">
+              "जब तक करोड़ों लोग भूखे और अज्ञानी रहेंगे, मैं उस प्रत्येक व्यक्ति को विश्वासघाती मानूंगा जो उनकी कीमत पर शिक्षित हुआ है और उनकी ओर बिल्कुल भी ध्यान नहीं देता है।"
             </blockquote>
-            <p className="text-xl opacity-90">
-              "In every village, establish cultural assemblies; in every village, spread auspicious knowledge"
+            <p className="text-lg lg:text-xl opacity-90 italic">
+              "As long as millions of people remain hungry and ignorant, I shall consider every person a traitor who has been educated at their expense and pays no attention to them."
             </p>
-            <cite className="text-lg opacity-80 block">- Mahamana Madan Mohan Malaviya</cite>
+            <cite className="text-lg opacity-80 block">— Swami Vivekananda</cite>
             <p className="text-lg opacity-90 max-w-3xl mx-auto">
-              This ancient wisdom guides our mission to make every village a center of learning, culture, and
-              prosperity, ultimately making Bihar and Bharat Mata once again Vishwaguru.
+              This profound wisdom from Swami Vivekananda drives our unwavering commitment to serve those who need education the most. Every educated individual has a sacred duty to uplift the masses and create a beautiful society.
             </p>
           </div>
         </div>
+
 
         {/* Core Values */}
         <div className="mt-20">
