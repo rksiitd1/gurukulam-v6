@@ -71,7 +71,7 @@ const AboutMissionHero = () => (
             <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6">
               <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3 sm:p-4">
                 <p className="text-xs sm:text-sm font-medium text-gray-900">
-                  "Empowering villages, transforming lives."
+                  Empowering villages, transforming lives.
                 </p>
               </div>
             </div>

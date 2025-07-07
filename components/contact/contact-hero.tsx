@@ -185,9 +185,8 @@ export function ContactHero() {
                 <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                   <p className="text-sm font-medium text-gray-900 mb-1 flex items-center">
                     <Heart className="w-4 h-4 mr-2 text-red-500" />
-                    "We're always here to listen and help"
+                    We're always here to listen and help
                   </p>
-                  <p className="text-xs text-gray-600">Open communication with our community</p>
                 </div>
               </div>
             </div>
