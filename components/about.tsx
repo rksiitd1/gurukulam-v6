@@ -118,6 +118,27 @@ export function About() {
           </div>
         </div>
 
+        {/* Add spacing between Journey Milestones and Guiding Mantra */}
+        <div className="mt-20"></div>
+
+        {/* Sanskrit Vision Quote */}
+        <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8 lg:p-12 text-white text-center mb-20">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h3 className="text-2xl lg:text-3xl font-bold">Our Guiding Mantra</h3>
+            <blockquote className="text-2xl lg:text-4xl font-devanagari leading-relaxed">
+              "ग्रामे-ग्रामे सभाकार्या, ग्रामे-ग्रामे कथा शुभा"
+            </blockquote>
+            <p className="text-xl opacity-90">
+              "In every village, establish cultural assemblies; in every village, spread auspicious knowledge"
+            </p>
+            <cite className="text-lg opacity-80 block">- Mahamana Madan Mohan Malaviya</cite>
+            <p className="text-lg opacity-90 max-w-3xl mx-auto">
+              This ancient wisdom guides our mission to make every village a center of learning, culture, and
+              prosperity, ultimately making Bihar and Bharat Mata once again Vishwaguru.
+            </p>
+          </div>
+        </div>
+
         {/* Core Values */}
         <div className="mt-20">
           <div className="text-center mb-12">
