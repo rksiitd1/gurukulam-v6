@@ -123,7 +123,7 @@ export function FAQ() {
             <span className="text-blue-600 block">Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Find answers to the most commonly asked questions about our programs, admissions, facilities, and how you
+            Find answers to the most commonly asked questions about us, our programs, and how you
             can get involved with our mission.
           </p>
           <p className="text-lg font-devanagari text-blue-700 mt-2">अक्सर पूछे जाने वाले प्रश्न</p>
