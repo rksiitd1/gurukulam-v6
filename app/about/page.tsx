@@ -1,5 +1,5 @@
 import AboutMissionHero from "@/components/about/about-mission-hero"
-import MissionStatement from "@/components/about/mission-statement"
+import { WhyWeExistSection } from "@/components/why-we-exist-section"
 import FocusAreas from "@/components/about/focus-areas"
 import { TeamProfiles } from "@/components/about/team-profiles"
 import { Vision } from "@/components/about/vision"
@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <main>
       <AboutMissionHero />
-      <MissionStatement />
+      <WhyWeExistSection />
       <FocusAreas />
       <Vision />
       <TeamProfiles />
