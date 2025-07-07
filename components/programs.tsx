@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { GraduationCap, BookOpen, Sprout, Users, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import ProgramImage from "./programs/ProgramImage"
 import Link from "next/link"
 
 export function Programs() {
@@ -86,13 +86,12 @@ export function Programs() {
               className={`overflow-hidden hover:shadow-xl transition-all duration-300 ${getColorClasses(program.color)}`}
             >
               <div className="relative aspect-[4/3] sm:aspect-[3/2] w-full overflow-hidden bg-gray-100">
-                <Image
+                <ProgramImage
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}
                   width={1536}
                   height={1024}
                   className="w-full h-full object-contain transition-transform duration-300 hover:scale-105 bg-gray-100"
-                  onContextMenu={e => e.preventDefault()}
                 />
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
                   {program.icon}
