@@ -29,7 +29,7 @@ export function TeamProfiles() {
       name: "Raju Kumar Jha",
       title: "Academic Director",
       titleHindi: "शैक्षणिक निदेशक",
-      education: "M.Sc., Patna University",
+      education: "M.Sc. Patna University",
       experience: "6+ years in education",
       specialization: "Curriculum Development, Teacher Training",
       description:
@@ -50,7 +50,7 @@ export function TeamProfiles() {
       name: "Sanjay Kumar",
       title: "Operations Manager",
       titleHindi: "संचालन प्रबंधक",
-      education: "B.A., Madhepura University",
+      education: "B.A. Madhepura University",
       experience: "3+ years in Education",
       specialization: "Education, Community Relations",
       description:
@@ -71,7 +71,7 @@ export function TeamProfiles() {
       name: "Vivek Kumar",
       title: "Agriculture Coordinator",
       titleHindi: "कृषि समन्वयक",
-      education: "Ph.D. Agriculture, BAU Sabour",
+      education: "B.Sc. Physics(Hons.), BNMU",
       experience: "15+ years in sustainable farming",
       specialization: "Organic Farming, Agroforestry",
       description:
@@ -161,37 +161,6 @@ export function TeamProfiles() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Team Stats */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Team Strength</h3>
-            <p className="text-gray-600 font-devanagari">टीम की शक्ति</p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">25+</div>
-              <div className="text-gray-700 font-medium">Team Members</div>
-              <div className="text-sm text-gray-500">Full-time & Part-time</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
-              <div className="text-gray-700 font-medium">Volunteers</div>
-              <div className="text-sm text-gray-500">Regular contributors</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">15+</div>
-              <div className="text-gray-700 font-medium">Teachers</div>
-              <div className="text-sm text-gray-500">Qualified educators</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
-              <div className="text-gray-700 font-medium">Commitment</div>
-              <div className="text-sm text-gray-500">To our mission</div>
-            </div>
-          </div>
         </div>
 
         {/* Join Team CTA */}
