@@ -194,57 +194,6 @@ export function Mentors() {
           ))}
         </div>
 
-        {/* Values Reflection */}
-        <div className="mt-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h3>
-            <p className="text-lg text-gray-600 font-devanagari">हमारे मूल सिद्धांत</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex justify-center"><Heart className="w-8 h-8 text-red-500" /></div>
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-900">Seva</h4>
-                  <p className="text-lg font-devanagari text-gray-600">सेवा</p>
-                </div>
-                <p className="text-gray-600 text-sm">Selfless service to uplift rural communities through education and empowerment.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex justify-center"><GraduationCap className="w-8 h-8 text-blue-500" /></div>
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-900">Sanskar</h4>
-                  <p className="text-lg font-devanagari text-gray-600">संस्कार</p>
-                </div>
-                <p className="text-gray-600 text-sm">Instilling cultural values and moral character alongside modern education.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex justify-center"><Sprout className="w-8 h-8 text-green-500" /></div>
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-900">Sustainability</h4>
-                  <p className="text-lg font-devanagari text-gray-600">स्थिरता</p>
-                </div>
-                <p className="text-gray-600 text-sm">Promoting eco-friendly farming and self-reliant village economies.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex justify-center"><Users className="w-8 h-8 text-orange-500" /></div>
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-900">Community</h4>
-                  <p className="text-lg font-devanagari text-gray-600">समुदाय</p>
-                </div>
-                <p className="text-gray-600 text-sm">Building strong, culturally rooted communities that support each other.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
       </div>
     </section>
   )
