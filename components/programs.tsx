@@ -92,6 +92,7 @@ export function Programs() {
                   width={1536}
                   height={1024}
                   className="w-full h-full object-contain transition-transform duration-300 hover:scale-105 bg-gray-100"
+                  onContextMenu={e => e.preventDefault()}
                 />
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
                   {program.icon}
