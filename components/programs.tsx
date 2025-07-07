@@ -13,7 +13,7 @@ export function Programs() {
       description:
         "K-12 residential school combining NCERT curriculum with Sanskrit, Yoga, and traditional values. Affordable education with hostel facilities for village children.",
       features: ["NCERT Curriculum", "Sanskrit & Yoga", "Residential Facilities", "Cultural Programs"],
-      image: "/images/programs/gurukulam.jpg",
+      image: "/images/programs/gurukulam3.jpg",
       color: "blue",
     },
     {
@@ -23,7 +23,7 @@ export function Programs() {
       description:
         "Coaching classes for grades 9-12 focusing on Science, Mathematics, and competitive exam preparation with minimal fees for rural students.",
       features: ["Grades 9-12 Coaching", "Competitive Exams", "Minimal Fees", "Expert Faculty"],
-      image: "/images/programs/shri-classes.jpg",
+      image: "/images/programs/shri-classes3.jpg",
       color: "green",
     },
     {
