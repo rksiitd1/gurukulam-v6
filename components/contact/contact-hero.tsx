@@ -173,7 +173,7 @@ export function ContactHero() {
             <div className="relative rounded-3xl overflow-hidden shadow-3xl hover:shadow-4xl transition-shadow duration-300">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                alt="Mukund Agarwal with students and community members"
+                alt="Mukund Agrawal with students and community members"
                 width={500}
                 height={600}
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"

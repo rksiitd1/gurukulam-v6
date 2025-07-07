@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "From IIT to Village - Empowering Bihar through education with yogic values, sustainable farming, and cultural values. Join our mission to transform rural communities.",
   keywords:
-    "Mukund Agarwal, Divya Bihar Mission, IIT Delhi, Bihar education, Gurukulam, rural development, education with yogic values",
+    "Mukund Agrawal, Divya Bihar Mission, IIT Delhi, Bihar education, Gurukulam, rural development, education with yogic values",
     generator: 'v0.dev'
 }
 

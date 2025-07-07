@@ -35,7 +35,7 @@ export function BlogPost({ slug }: BlogPostProps) {
       <h2>The Gurukulam Vision</h2>
       <p>
         The journey of Divya Bihar Mission began with a simple yet powerful vision: to provide quality education to
-        every child in rural Bihar, irrespective of their socio-economic background. Our founder, Mukund Agarwal, an
+        every child in rural Bihar, irrespective of their socio-economic background. Our founder, Mukund Agrawal, an
         IIT Delhi alumnus, witnessed the stark educational disparities in his home state and was moved to create a
         system that was both modern in its approach and rooted in Indian values.
       </p>
@@ -78,7 +78,7 @@ export function BlogPost({ slug }: BlogPostProps) {
       <p>This is not just my story – it's a call to action for all of us to contribute to the transformation of rural India, one village at a time.</p>
     `,
     category: "Founder Story",
-    author: "Mukund Agarwal",
+    author: "Mukund Agrawal",
     date: "2024-01-15",
     readTime: "8 min read",
     views: "2.5K",

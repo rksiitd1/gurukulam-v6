@@ -4,7 +4,7 @@ A modern, responsive website for Divya Bihar Mission, showcasing their education
 
 ## 🌟 Project Overview
 
-Divya Bihar Mission is a transformative initiative led by Mukund Agarwal (IIT Delhi alumnus) that combines traditional Gurukulam education with modern sustainable practices. The mission focuses on:
+Divya Bihar Mission is a transformative initiative led by Mukund Agrawal (IIT Delhi alumnus) that combines traditional Gurukulam education with modern sustainable practices. The mission focuses on:
 
 - **Education with Yogic Values**: Traditional Gurukulam education system
 - **Sustainable Agriculture**: Modern farming techniques with traditional wisdom
@@ -306,7 +306,7 @@ This project is proprietary and confidential. All rights reserved.
 
 ## 🙏 Acknowledgments
 
-- **Mukund Agarwal**: Vision and leadership
+- **Mukund Agrawal**: Vision and leadership
 - **IIT Delhi**: Educational foundation
 - **Bihar Community**: Inspiration and support
 - **Open Source Community**: Tools and libraries used

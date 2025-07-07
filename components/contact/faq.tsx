@@ -18,7 +18,7 @@ export function FAQ() {
         {
           question: "What is Divya Bihar Mission?",
           answer:
-            "Divya Bihar Mission is a comprehensive rural development organization founded by Mukund Agarwal in 2018. We focus on holistic education, sustainable agriculture, and community empowerment in rural Bihar through our four main programs: Divya Bihar Global Gurukulam, Shri Classes, Agriculture Program, and Udyamita Program.",
+            "Divya Bihar Mission is a comprehensive rural development organization founded by Mukund Agrawal in 2018. We focus on holistic education, sustainable agriculture, and community empowerment in rural Bihar through our four main programs: Divya Bihar Global Gurukulam, Shri Classes, Agriculture Program, and Udyamita Program.",
         },
         {
           question: "Where are you located?",

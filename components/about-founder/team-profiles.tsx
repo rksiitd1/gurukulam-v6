@@ -5,7 +5,7 @@ import Image from "next/image"
 export function TeamProfiles() {
   const coreTeam = [
     {
-      name: "Shri Mukund Agarwal",
+      name: "Shri Mukund Agrawal",
       title: "Founder & Director",
       titleHindi: "संस्थापक एवं निदेशक",
       education: "B.Tech Mechanical Engineering, IIT Delhi",

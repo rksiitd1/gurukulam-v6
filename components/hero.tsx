@@ -73,7 +73,7 @@ export function Hero() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                alt="Mukund Agarwal teaching village children"
+                alt="Mukund Agrawal teaching village children"
                 width={500}
                 height={600}
                 className="w-full h-64 sm:h-80 lg:h-auto object-cover"

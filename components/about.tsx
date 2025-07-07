@@ -48,7 +48,7 @@ export function About() {
               </h2>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                After graduating from IIT Delhi in 2017 with a B.Tech in Mechanical Engineering, Shri Mukund Agarwal
+                After graduating from IIT Delhi in 2017 with a B.Tech in Mechanical Engineering, Shri Mukund Agrawal
                 chose to return to his native Bihar in 2018. His experiences teaching children in Delhi slums and
                 meeting dedicated social workers ignited a deep urge to serve his homeland.
               </p>
@@ -58,7 +58,7 @@ export function About() {
                   "I realized that true success isn't measured by corporate achievements, but by the positive impact we
                   create in our communities. Bihar needed its children to return and serve."
                 </blockquote>
-                <cite className="text-orange-700 font-medium mt-2 block">- Mukund Agarwal</cite>
+                <cite className="text-orange-700 font-medium mt-2 block">- Mukund Agrawal</cite>
               </div>
 
               <p className="text-gray-600">
@@ -74,7 +74,7 @@ export function About() {
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=400&width=500"
-                alt="Mukund Agarwal with students"
+                alt="Mukund Agrawal with students"
                 width={500}
                 height={400}
                 className="rounded-2xl shadow-lg w-full h-auto object-cover"

@@ -32,7 +32,7 @@ export function AboutHero() {
 
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Meet
-                <span className="text-orange-600 block">Shri Mukund Agarwal</span>
+                <span className="text-orange-600 block">Shri Mukund Agrawal</span>
                 <span className="text-green-700 block font-devanagari text-3xl lg:text-4xl mt-2">श्री मुकुंद अग्रवाल</span>
               </h1>
 
@@ -46,7 +46,7 @@ export function AboutHero() {
                   "शिक्षा ही वह शक्ति है जो समाज को बदल सकती है"
                 </blockquote>
                 <p className="text-orange-700 italic">"Education is the power that can transform society"</p>
-                <cite className="text-orange-600 font-medium mt-2 block">- Mukund Agarwal</cite>
+                <cite className="text-orange-600 font-medium mt-2 block">- Mukund Agrawal</cite>
               </div>
             </div>
 
@@ -102,7 +102,7 @@ export function AboutHero() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/placeholder.svg?height=700&width=600"
-                alt="Mukund Agarwal teaching students in village classroom"
+                alt="Mukund Agrawal teaching students in village classroom"
                 width={600}
                 height={700}
                 className="w-full h-auto object-cover"

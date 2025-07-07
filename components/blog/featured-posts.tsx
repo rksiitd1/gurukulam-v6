@@ -9,7 +9,7 @@ export function FeaturedPosts() {
       id: 1,
       title: "From IIT Delhi to Bihar Villages: A Journey of Purpose",
       excerpt:
-        "How Mukund Agarwal left his corporate career to dedicate his life to transforming rural education in Bihar through dharmic values and modern pedagogy.",
+        "How Mukund Agrawal left his corporate career to dedicate his life to transforming rural education in Bihar through dharmic values and modern pedagogy.",
       date: "2024-01-15",
       image: "/placeholder.svg?height=400&width=600",
       slug: "iit-delhi-to-bihar-villages-journey",
