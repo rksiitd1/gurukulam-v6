@@ -219,19 +219,6 @@ export function ProgramsGrid() {
                   </div>
                 </div>
 
-                {/* Program Highlights */}
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
-                  <div className="space-y-2">
-                    {program.highlights.map((highlight, highlightIndex) => (
-                      <div key={highlightIndex} className="flex items-center space-x-2 text-sm">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                        <span className="text-gray-700">{highlight}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
                 {/* Program Info */}
                 <div className="flex items-center justify-between text-sm text-gray-500 pt-4 border-t border-gray-100">
                   <div className="flex items-center space-x-1">
