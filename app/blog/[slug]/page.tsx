@@ -1,6 +1,5 @@
 import { BlogPost } from "@/components/blog/blog-post"
 import { RelatedPosts } from "@/components/blog/related-posts"
-import { BlogComments } from "@/components/blog/blog-comments"
 
 interface BlogPostPageProps {
   params: {
@@ -13,7 +12,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <main>
       <BlogPost slug={params.slug} />
       <RelatedPosts />
-      <BlogComments />
     </main>
   )
 }
