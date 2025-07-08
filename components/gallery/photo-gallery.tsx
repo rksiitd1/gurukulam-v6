@@ -203,8 +203,9 @@ export function PhotoGallery() {
             <span className="text-blue-600 block">Every Moment</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Browse through our extensive collection of photographs documenting the journey of transformation, learning,
-            and community building at Divya Bihar Mission.
+            Browse through our collection of photographs 
+            documenting the journey of transformation 
+            at Divya Bihar Mission.
           </p>
           <p className="text-lg font-devanagari text-blue-700 mt-2">हर पल को संजोते हुए</p>
         </div>
