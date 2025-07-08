@@ -3,12 +3,25 @@
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { useRouter } from "next/navigation"
-import { useState, useEffect } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
+import { useState, useEffect, useRef } from "react"
 
 export function BlogHero() {
   const [search, setSearch] = useState("");
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Focus input if ?focus=1 is present
+  useEffect(() => {
+    if (searchParams.get("focus") === "1") {
+      inputRef.current?.focus();
+      // Remove focus param from URL after focusing
+      const params = new URLSearchParams(Array.from(searchParams.entries()));
+      params.delete("focus");
+      router.replace(`/blog${params.toString() ? `?${params.toString()}` : ""}`);
+    }
+  }, [searchParams, router]);
 
   useEffect(() => {
     if (search.trim()) {
@@ -39,6 +52,7 @@ export function BlogHero() {
           <div className="max-w-md mx-auto mb-8">
             <div className="relative flex">
               <Input
+                ref={inputRef}
                 type="text"
                 placeholder="Search articles..."
                 value={search}
