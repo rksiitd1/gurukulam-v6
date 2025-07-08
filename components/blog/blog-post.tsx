@@ -14,8 +14,12 @@ interface BlogPostProps {
 
 // Enhanced content renderer with refined typography
 function ContentRenderer({ content }: { content: string }) {
+  // Add id attributes to h2 headings for anchor navigation
   const cleanContent = content
-    .replace(/<h2>/g, '<h2 class="text-3xl font-semibold text-gray-900 mt-16 mb-6 tracking-tight leading-snug font-serif relative after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-orange-500 after:to-red-500 after:rounded-full pb-3">')
+    .replace(/<h2>(.*?)<\/h2>/g, (match, p1) => {
+      const slug = p1.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      return `<h2 id="${slug}" class=\"text-3xl font-semibold text-gray-900 mt-16 mb-6 tracking-tight leading-snug font-serif relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-orange-500 after:to-red-500 after:rounded-full pb-3 scroll-mt-24\">${p1}</h2>`;
+    })
     .replace(/<h3>/g, '<h3 class="text-xl font-medium text-gray-800 mt-12 mb-4 tracking-wide font-serif">')
     .replace(/<p>/g, '<p class="text-gray-700 leading-relaxed mb-6 text-lg font-normal tracking-wide">')
     .replace(/<blockquote>/g, '<blockquote class="border-l-4 border-orange-500 bg-gradient-to-r from-orange-50/70 to-transparent py-6 px-8 my-8 text-lg font-medium italic text-gray-700 rounded-r-lg relative before:content-[\'"\'] before:text-6xl before:text-orange-300 before:absolute before:-top-2 before:left-4 before:font-serif">')
@@ -137,9 +141,9 @@ export function BlogPost({ slug }: BlogPostProps) {
           <div className="flex items-center justify-between">
             <Link
               href="/blog"
-              className="inline-flex items-center text-orange-600 hover:text-orange-700 transition-all duration-300 hover:translate-x-1 font-medium tracking-wide text-sm"
+              className="group inline-flex items-center text-orange-600 hover:text-orange-700 transition-all duration-300 font-semibold tracking-wide text-base px-5 py-2 rounded-full bg-white/80 border border-orange-100/60 shadow-sm hover:bg-orange-50 focus:ring-2 focus:ring-orange-300 focus:outline-none"
             >
-              <ArrowLeft className="w-4 h-4 mr-2" />
+              <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform duration-300" />
               <span>Back to Blog</span>
             </Link>
             
