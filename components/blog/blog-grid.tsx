@@ -11,8 +11,8 @@ import { blogPosts } from "@/lib/blog-posts"
 export function BlogGrid() {
   const [visiblePosts, setVisiblePosts] = useState(12)
 
-  // Sort posts by date (newest first)
-  const sortedPosts = blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  // Sort posts by id in descending order
+  const sortedPosts = blogPosts.slice().sort((a, b) => b.id - a.id)
   const displayedPosts = sortedPosts.slice(0, visiblePosts)
   const hasMorePosts = visiblePosts < sortedPosts.length
 
