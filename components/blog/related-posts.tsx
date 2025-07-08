@@ -39,35 +39,23 @@ export function RelatedPosts() {
   ]
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Latest Articles</h2>
-          <p className="text-lg text-gray-600">Discover our most recent stories and insights</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Stories</h2>
+          <p className="text-lg text-gray-600">Inspiring journeys and transformative experiences from our community</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {latestPosts.map((post) => (
             <Link key={post.id} href={`/blog/${post.slug}`}>
-              <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden h-full rounded-none">
+              <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden h-full rounded-none bg-white">
                 <div className="relative rounded-none">
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-3 right-3">
-                    <Badge
-                      variant={post.type === "Video" ? "default" : "secondary"}
-                      className={
-                        post.type === "Video"
-                          ? "bg-red-600 hover:bg-red-700 rounded-none"
-                          : "bg-blue-600 hover:bg-blue-700 rounded-none"
-                      }
-                    >
-                      {post.type}
-                    </Badge>
-                  </div>
                 </div>
 
                 <CardContent className="p-4 flex flex-col justify-between h-full">
