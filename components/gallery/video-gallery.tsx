@@ -122,8 +122,7 @@ export function VideoGallery() {
             <span className="text-red-600 block">Motion</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the impact of our mission through compelling videos that showcase real stories, achievements, and
-            the transformative power of education in rural Bihar.
+            Witness dreams becoming reality through our video stories of educational transformation in rural Bihar.
           </p>
           <p className="text-lg font-devanagari text-red-700 mt-2">चलचित्रों में हमारी कहानी</p>
         </div>
