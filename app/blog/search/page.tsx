@@ -50,7 +50,8 @@ function SearchPage() {
     .filter(
       post =>
         post.title.toLowerCase().includes(query.toLowerCase()) ||
-        post.excerpt.toLowerCase().includes(query.toLowerCase())
+        post.excerpt.toLowerCase().includes(query.toLowerCase()) ||
+        post.content.toLowerCase().includes(query.toLowerCase())
     )
     .sort((a, b) => b.id - a.id);
 
