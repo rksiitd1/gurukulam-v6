@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { blogPosts } from "@/lib/blog-posts"
 import { RelatedPosts } from "./related-posts"
+import { useEffect, useState, useRef } from "react"
 
 interface BlogPostProps {
   slug: string
@@ -108,6 +109,19 @@ function TableOfContents({ content }: { content: string }) {
 // Main component with stunning design
 export function BlogPost({ slug }: BlogPostProps) {
   const post = blogPosts.find(p => p.slug === slug)
+  const [showStickyTitle, setShowStickyTitle] = useState(false)
+  const titleRef = useRef<HTMLHeadingElement>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!titleRef.current) return;
+      const rect = titleRef.current.getBoundingClientRect();
+      setShowStickyTitle(rect.bottom < 80); // 80px is a safe nav height
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
   
   if (!post) {
     return (
@@ -136,18 +150,39 @@ export function BlogPost({ slug }: BlogPostProps) {
   return (
     <article className="min-h-screen bg-gradient-to-br from-orange-50/40 via-white to-red-50/40">
       {/* Refined Navigation */}
-      <nav className="sticky top-0 bg-white/90 backdrop-blur-xl border-b border-orange-100/60 z-50 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
+      <nav className="sticky top-0 bg-white/90 backdrop-blur-xl border-b border-orange-100/60 z-50 shadow-sm min-h-16" style={{ minHeight: '4rem' }}>
+        <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8 py-4 sm:py-5">
+          <div className="flex flex-row items-center justify-between w-full gap-2">
+            {/* Back button: hide on mobile when sticky title is visible */}
             <Link
               href="/blog"
-              className="group inline-flex items-center text-orange-600 hover:text-orange-700 transition-all duration-300 font-semibold tracking-wide text-base px-5 py-2 rounded-full bg-white/80 border border-orange-100/60 shadow-sm hover:bg-orange-50 focus:ring-2 focus:ring-orange-300 focus:outline-none"
+              className={`group inline-flex items-center text-orange-600 hover:text-orange-700 transition-all duration-300 font-semibold tracking-wide text-xs sm:text-sm px-3 py-2 rounded-full bg-white/80 border border-orange-300 shadow-sm hover:bg-orange-50 focus:ring-2 focus:ring-orange-300 focus:outline-none h-9 min-w-[90px] justify-center
+                ${showStickyTitle ? 'hidden sm:flex' : ''}`}
+              style={{ minHeight: '2.25rem' }}
             >
-              <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform duration-300" />
-              <span>Back to Blog</span>
+              <ArrowLeft className="w-4 h-4 mr-1 group-hover:-translate-x-1 transition-transform duration-300" />
+              <span className="inline sm:hidden">Back</span>
+              <span className="hidden sm:inline">Back to Blog</span>
             </Link>
-            
-            <div className="px-4 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md font-medium tracking-wide text-sm">
+            <div className="flex-1 flex justify-center items-center min-w-0">
+              <span
+                className={`transition-opacity duration-300 whitespace-nowrap overflow-hidden font-semibold text-base sm:text-lg text-gray-900 relative ${showStickyTitle ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                style={{ maxWidth: '80vw', display: 'inline-block', verticalAlign: 'middle' }}
+              >
+                {post?.title}
+                <span
+                  aria-hidden="true"
+                  className="absolute right-0 top-0 h-full w-8 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(to right, transparent, white 80%)',
+                    display: 'inline-block',
+                  }}
+                />
+              </span>
+            </div>
+            {/* Category badge: hide on mobile when sticky title is visible */}
+            <div className={`px-3 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full shadow-md font-medium tracking-wide text-xs sm:text-sm h-9 flex items-center min-w-[90px] justify-center
+              ${showStickyTitle ? 'hidden sm:flex' : ''}`}>
               {post.category}
             </div>
           </div>
@@ -156,16 +191,16 @@ export function BlogPost({ slug }: BlogPostProps) {
 
       {/* Hero Section with refined typography */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <header className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight tracking-tight font-serif">
+        <header className="text-center mb-6 sm:mb-12 px-2">
+          <h1 ref={titleRef} className="text-3xl xs:text-4xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-2 sm:mb-4 leading-tight tracking-tight font-serif break-words">
             {post.title}
           </h1>
-          
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed font-normal tracking-wide">
+          <p className="text-base xs:text-lg md:text-lg text-gray-600 mb-3 sm:mb-6 max-w-3xl mx-auto leading-relaxed font-normal tracking-wide">
             {post.excerpt}
           </p>
-          
-          <ArticleMetadata post={post} />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 w-full max-w-xl mx-auto">
+            <ArticleMetadata post={post} />
+          </div>
         </header>
 
         {/* Featured Image with refined proportions */}
