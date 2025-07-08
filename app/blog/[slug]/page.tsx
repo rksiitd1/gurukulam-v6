@@ -1,5 +1,4 @@
 import { BlogPost } from "@/components/blog/blog-post"
-import { RelatedPosts } from "@/components/blog/related-posts"
 
 interface BlogPostPageProps {
   params: {
@@ -11,7 +10,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   return (
     <main>
       <BlogPost slug={params.slug} />
-      <RelatedPosts />
     </main>
   )
 }
