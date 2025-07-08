@@ -55,10 +55,10 @@ export function About() {
 
               <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border border-orange-200 rounded-lg p-6">
                 <blockquote className="text-gray-800 italic text-lg">
-                  I realized that true success isn't measured by corporate achievements, but by the positive impact we
-                  create in our communities. Bihar needed its children to return and serve.
+                  "I realized that true success isn't measured by corporate achievements, but by the positive impact we
+                  create in our communities. Bihar needed its children to return and serve."
                 </blockquote>
-                <cite className="text-orange-700 font-medium mt-2 block">- Mukund Agrawal</cite>
+                <cite className="text-orange-700 font-medium mt-2 block text-right">- Mukund Agrawal</cite>
               </div>
 
               <p className="text-gray-600">
