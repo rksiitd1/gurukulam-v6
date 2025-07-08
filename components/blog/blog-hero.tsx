@@ -1,8 +1,27 @@
+"use client"
+
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { useRouter } from "next/navigation"
+import { useState, useEffect } from "react"
 
 export function BlogHero() {
+  const [search, setSearch] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (search.trim()) {
+      const timeout = setTimeout(() => {
+        router.push(`/blog/search?q=${encodeURIComponent(search.trim())}`);
+      }, 200);
+      return () => clearTimeout(timeout);
+    } else {
+      // If search is cleared, go back to blog page
+      router.push('/blog');
+    }
+  }, [search, router]);
+
   return (
     <section className="bg-gradient-to-br from-orange-50 via-white to-red-50 py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,10 +37,25 @@ export function BlogHero() {
 
           {/* Search Bar */}
           <div className="max-w-md mx-auto mb-8">
-            <div className="relative">
-              
-              
-              
+            <div className="relative flex">
+              <Input
+                type="text"
+                placeholder="Search articles..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                className="flex-1 pr-12"
+              />
+              <Button
+                type="button"
+                className="absolute right-1 top-1/2 -translate-y-1/2 px-3 py-2"
+                variant="secondary"
+                aria-label="Search"
+                tabIndex={-1}
+                disabled
+                style={{ pointerEvents: 'none', opacity: 0.5 }}
+              >
+                <Search className="w-5 h-5" />
+              </Button>
             </div>
           </div>
         </div>
