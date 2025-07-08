@@ -9,7 +9,7 @@ import { useState } from "react"
 import { blogPosts } from "@/lib/blog-posts"
 
 export function BlogGrid() {
-  const [visiblePosts, setVisiblePosts] = useState(12)
+  const [visiblePosts, setVisiblePosts] = useState(6)
 
   // Sort posts by id in descending order
   const sortedPosts = blogPosts.slice().sort((a, b) => b.id - a.id)
@@ -17,7 +17,7 @@ export function BlogGrid() {
   const hasMorePosts = visiblePosts < sortedPosts.length
 
   const loadMorePosts = () => {
-    setVisiblePosts((prev) => Math.min(prev + 12, sortedPosts.length))
+    setVisiblePosts((prev) => Math.min(prev + 6, sortedPosts.length))
   }
 
   return (
@@ -70,18 +70,17 @@ export function BlogGrid() {
         ))}
       </div>
 
-      {hasMorePosts && (
-        <div className="text-center pt-8">
-          <Button
-            onClick={loadMorePosts}
-            variant="outline"
-            size="lg"
-            className="hover:bg-orange-600 hover:text-white hover:border-orange-600 transition-colors"
-          >
-            Load More Stories
-          </Button>
-        </div>
-      )}
+      <div className="text-center pt-8">
+        <Button
+          onClick={loadMorePosts}
+          disabled={!hasMorePosts}
+          size="lg"
+          variant="outline"
+          className="border-blue-600 text-blue-700 hover:bg-blue-50"
+        >
+          {hasMorePosts ? "Load More Stories" : "No more stories"}
+        </Button>
+      </div>
     </div>
   )
 }
