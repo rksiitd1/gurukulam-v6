@@ -5,9 +5,17 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, Share2, Search as SearchIcon } from "lucide-react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { Input } from "@/components/ui/input"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, Suspense } from "react"
 
-export default function SearchPage() {
+export default function SearchPageWrapper() {
+  return (
+    <Suspense fallback={null}>
+      <SearchPage />
+    </Suspense>
+  );
+}
+
+function SearchPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const initialQuery = (searchParams.get("q") || "");
