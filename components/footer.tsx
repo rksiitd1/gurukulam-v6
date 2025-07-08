@@ -108,7 +108,8 @@ export function Footer() {
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
                 <a
                   href="tel:+919262536295"
-                  className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation"
+                  className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation flex items-center"
+                  style={{ lineHeight: 1 }}
                 >
                   +91 92625 36295
                 </a>
@@ -117,7 +118,8 @@ export function Footer() {
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
                 <a
                   href="mailto:divyabiharmission@gmail.com"
-                  className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation"
+                  className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation flex items-center"
+                  style={{ lineHeight: 1 }}
                 >
                   divyabiharmission@gmail.com
                 </a>
