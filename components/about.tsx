@@ -133,7 +133,7 @@ export function About() {
             </p>
             <cite className="text-lg opacity-80 block">— Swami Vivekananda</cite>
             <p className="text-lg opacity-90 max-w-3xl mx-auto">
-              This profound wisdom from Swami Vivekananda drives our unwavering commitment to serve those who need education the most. Every educated individual has a sacred duty to uplift society and create a beautiful world for all.
+              This profound wisdom from Swami Vivekananda drives our unwavering commitment to serve those who need the most. Every educated individual has a sacred duty to uplift society and create a beautiful world for all.
             </p>
           </div>
         </div>
