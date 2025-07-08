@@ -2,41 +2,35 @@ import Link from "next/link"
 import { Calendar, Share2 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
+import { blogPosts } from "@/lib/blog-posts"
 
-export function RelatedPosts() {
-  // Get the top 3 latest posts (same as in BlogGrid)
-  const latestPosts = [
-    {
-      id: 1,
-      title: "Success Story: From Village Student to Engineering College",
-      excerpt:
-        "Meet Priya Kumari, who cracked JEE Advanced after studying at our Shri Classes and is now pursuing her dream of becoming an engineer.",
-      date: "2024-01-15",
-      image: "/placeholder.svg?height=200&width=350",
-      slug: "village-student-engineering-college-success",
-      type: "Article",
-    },
-    {
-      id: 2,
-      title: "Udyamita Program: Nurturing Young Entrepreneurs",
-      excerpt:
-        "How our entrepreneurship program is helping rural youth start their own businesses and become job creators rather than job seekers.",
-      date: "2024-01-12",
-      image: "/placeholder.svg?height=200&width=350",
-      slug: "udyamita-program-nurturing-young-entrepreneurs",
-      type: "Video",
-    },
-    {
-      id: 3,
-      title: "Traditional Festivals at Gurukulam: Preserving Cultural Heritage",
-      excerpt:
-        "Celebrating Diwali, Holi, and other festivals at our Gurukulam while teaching students about their cultural significance and values.",
-      date: "2024-01-10",
-      image: "/placeholder.svg?height=200&width=350",
-      slug: "traditional-festivals-gurukulam-cultural-heritage",
-      type: "Article",
-    },
-  ]
+interface RelatedPostsProps {
+  currentId: number;
+}
+
+export function RelatedPosts({ currentId }: RelatedPostsProps) {
+  const ids = blogPosts.map(post => post.id).sort((a, b) => a - b);
+  const idx = ids.indexOf(currentId);
+  let relatedIds: number[] = [];
+  // Try (id-1), (id+1), (id+2)
+  if (ids[idx - 1] && ids[idx + 1] && ids[idx + 2]) {
+    relatedIds = [ids[idx - 1], ids[idx + 1], ids[idx + 2]];
+  } else if (!ids[idx - 1] && ids[idx + 1] && ids[idx + 2] && ids[idx + 3]) {
+    // If (id-1) not available, try (id+1), (id+2), (id+3)
+    relatedIds = [ids[idx + 1], ids[idx + 2], ids[idx + 3]];
+  } else if (ids[idx - 2] && ids[idx - 1] && ids[idx + 1] && !ids[idx + 2]) {
+    // If (id+2) not available, try (id-2), (id-1), (id+1)
+    relatedIds = [ids[idx - 2], ids[idx - 1], ids[idx + 1]];
+  } else if (ids[idx - 3] && ids[idx - 2] && ids[idx - 1] && !ids[idx + 1] && !ids[idx + 2]) {
+    // If (id+1) and (id+2) not available, try (id-3), (id-2), (id-1)
+    relatedIds = [ids[idx - 3], ids[idx - 2], ids[idx - 1]];
+  } else {
+    // Fallback: just pick the next 3 available (excluding current)
+    relatedIds = ids.filter(id => id !== currentId).slice(0, 3);
+  }
+  const latestPosts = relatedIds
+    .map(id => blogPosts.find(post => post.id === id))
+    .filter((post): post is typeof blogPosts[number] => Boolean(post));
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
