@@ -187,18 +187,6 @@ export function BlogGrid() {
                   alt={post.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-3 right-3">
-                  <Badge
-                    variant={post.type === "Video" ? "default" : "secondary"}
-                    className={
-                      post.type === "Video"
-                        ? "bg-red-600 hover:bg-red-700 rounded-none"
-                        : "bg-blue-600 hover:bg-blue-700 rounded-none"
-                    }
-                  >
-                    {post.type}
-                  </Badge>
-                </div>
               </div>
 
               <CardContent className="p-4 flex flex-col justify-between h-full">
