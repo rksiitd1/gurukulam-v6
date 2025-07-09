@@ -15,27 +15,27 @@ export function WhyWeExistSection() {
         </p>
         <div className="hidden sm:grid grid-cols-5 gap-4 mb-8">
           <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
-            <GraduationCap className="w-9 h-9 text-blue-600 mb-2" />
+            <GraduationCap className="w-11 h-11 text-blue-600 mb-2" />
             <span className="font-medium text-base font-devanagari">शिक्षा</span>
             <span className="text-xs text-gray-500">Education</span>
           </div>
           <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
-            <Sprout className="w-9 h-9 text-green-600 mb-2" />
+            <Sprout className="w-11 h-11 text-green-600 mb-2" />
             <span className="font-medium text-base font-devanagari">कृषि</span>
             <span className="text-xs text-gray-500">Agriculture</span>
           </div>
           <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
-            <Users className="w-9 h-9 text-orange-600 mb-2" />
+            <Users className="w-11 h-11 text-orange-600 mb-2" />
             <span className="font-medium text-base font-devanagari">उद्यमिता</span>
             <span className="text-xs text-gray-500">Entrepreneurship</span>
           </div>
           <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
-            <Heart className="w-9 h-9 text-pink-600 mb-2" />
+            <Heart className="w-11 h-11 text-pink-600 mb-2" />
             <span className="font-medium text-base font-devanagari">गौशाला</span>
             <span className="text-xs text-gray-500">Gaushala</span>
           </div>
           <div className="flex flex-col items-center p-3 bg-white/70 rounded-lg shadow-sm">
-            <BookOpen className="w-9 h-9 text-yellow-600 mb-2" />
+            <BookOpen className="w-11 h-11 text-yellow-600 mb-2" />
             <span className="font-medium text-base font-devanagari">संस्कृति</span>
             <span className="text-xs text-gray-500">Culture</span>
           </div>
