@@ -36,20 +36,20 @@ export function BlogHero() {
   }, [search, router]);
 
   return (
-    <section className="bg-gradient-to-br from-orange-50 via-white to-red-50 py-20 relative">
+    <section className="bg-gradient-to-br from-orange-50 via-white to-red-50 py-8 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Divya Bihar Mission
             <span className="block text-orange-600">Updates &amp; Stories</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
             Inspiring stories, educational insights, and updates from our mission
           </p>
-          <p className="text-lg text-gray-500 font-devanagari mb-8">शिक्षा और संस्कार की कहानियां</p>
+          <p className="text-lg text-gray-500 font-devanagari mb-4">शिक्षा और संस्कार की कहानियां</p>
 
           {/* Search Bar */}
-          <div className="max-w-md mx-auto mb-8">
+          <div className="max-w-md mx-auto mb-4">
             <div className="relative flex">
               <Input
                 ref={inputRef}
