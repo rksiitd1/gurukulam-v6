@@ -97,11 +97,12 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-base sm:text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0 mt-0.5" />
-                <div className="text-sm text-gray-300">
-                  <p>Raghopur, Supaul District</p>
-                  <p>Bihar, India - 852111</p>
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0" />
+                <div className="text-sm text-gray-300 flex items-center" style={{ lineHeight: 1 }}>
+                  <span>
+                    Raghopur, Supaul District<br />Bihar, India - 852111
+                  </span>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
