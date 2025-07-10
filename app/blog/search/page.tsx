@@ -93,7 +93,7 @@ function SearchPage() {
                 placeholder="Search articles..."
                 value={query}
                 onChange={e => setQuery(e.target.value)}
-                className="flex-1 pr-12 text-lg bg-white/90 backdrop-blur-sm border-orange-200 focus:border-orange-400 shadow-lg group-hover:shadow-xl transition-all duration-300 rounded-xl"
+                className="flex-1 pr-12 text-lg bg-white/90 backdrop-blur-sm border-orange-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-400/50 focus:outline-none shadow-lg group-hover:shadow-xl transition-all duration-300 rounded-xl"
                 autoFocus
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-orange-500 group-hover:text-orange-600 transition-colors duration-300">
